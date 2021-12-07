@@ -54,13 +54,13 @@ html {
       font-weight: 900;
       font-style: italic;
       text-decoration: none;
-      color: #e1148F; }
+      color: #e1148f; }
     .header .nav {
       padding-left: 0; }
       .header .nav .nav__element {
-        padding: 0 2rem; }
+        padding: 1rem 2rem 0; }
         .header .nav .nav__element .nav__item {
-          font-size: 2.5vw;
+          font-size: 2rem;
           color: #ffffff; } }
 
 @media screen and (max-width: 768px) {
@@ -419,9 +419,9 @@ html {
         font-style: italic;
         border-bottom: 1px solid #e1148f;
         padding-bottom: 1rem; }
-      .news-body .main-article .main-article__info .article__title--main {
+      .news-body .main-article .main-article__info h2 {
         padding-top: 2rem; }
-        .news-body .main-article .main-article__info .article__title--main a {
+        .news-body .main-article .main-article__info h2 .article__title--main {
           font-size: 2.3vw;
           font-weight: 700;
           font-style: italic;
@@ -440,7 +440,7 @@ html {
     .news-body .sec-news .sec-news__article {
       display: flex;
       flex-direction: column;
-      max-width: 25vw; }
+      width: 25vw; }
       .news-body .sec-news .sec-news__article .sec-news__imgcontainer {
         max-height: 250px;
         overflow: hidden; }
@@ -458,10 +458,10 @@ html {
         font-weight: 300;
         font-style: italic;
         padding: 1rem 0; }
-      .news-body .sec-news .sec-news__article .sec-news__info .article__title--sec {
+      .news-body .sec-news .sec-news__article .sec-news__info h3 {
         max-height: 10rem;
         overflow: hidden; }
-        .news-body .sec-news .sec-news__article .sec-news__info .article__title--sec a {
+        .news-body .sec-news .sec-news__article .sec-news__info h3 .article__title--sec {
           font-size: 1.8rem;
           font-weight: 700;
           font-style: italic;
@@ -493,11 +493,9 @@ html {
           font-weight: 300;
           font-style: italic;
           padding: 1rem 0; }
-        .news-body .other-news .other-news__article .other-news__info .other-news__info--title a {
+        .news-body .other-news .other-news__article .other-news__info h4 .other-news__info--title {
           text-decoration: none;
           color: #000000; }
-        .news-body .other-news .other-news__article .other-news__info .other-news__info--description {
-          padding-top: 1rem; }
 
 footer {
   grid-area: footer;
@@ -539,11 +537,41 @@ footer {
 
 @media screen and (max-width: 1280px) {
   .container {
-    grid-template-rows: 140px 400px auto auto auto 200px; } }
+    grid-template-rows: 140px 400px auto auto auto 200px; }
+  .news-body main .main-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .news-body main .main-article .main-article__imgcontainer {
+      max-width: 100vw; }
+    .news-body main .main-article .main-article__info {
+      width: 100%;
+      box-sizing: border-box;
+      text-align: center; }
+      .news-body main .main-article .main-article__info h3 .article__title--main {
+        font-size: 3rem; }
+  .recs-body .AOTW-section .recs-section .rec-album {
+    flex-direction: column;
+    align-items: center; }
+    .recs-body .AOTW-section .recs-section .rec-album .rec-album__cover {
+      width: 75%; }
+    .recs-body .AOTW-section .recs-section .rec-album .rec-album__info {
+      width: 75%;
+      border-right: 1px solid #eeeeee; } }
 
 @media screen and (max-width: 992px) {
   .container {
-    grid-template-rows: 140px 400px auto auto auto 200px; } }
+    grid-template-rows: 140px 400px auto auto auto 200px; }
+  .news-body main .main-article .main-article__info h2 .article__title--main {
+    font-size: 3rem; }
+  .news-body main .sec-news {
+    flex-direction: column;
+    align-items: center; }
+    .news-body main .sec-news .sec-news__article {
+      width: 75vw;
+      margin: 3rem 0; }
+      .news-body main .sec-news .sec-news__article .sec-news__imgcontainer .sec-news__imgcontainer--img {
+        width: 100%; } }
 
 @media screen and (max-width: 768px) {
   .container .section-2 {
@@ -554,7 +582,18 @@ footer {
     height: 250px; }
     .container .service-items div p {
       font-size: 1.8rem;
-      width: 90vw; } }
+      width: 90vw; }
+  .news-body main .sec-news .sec-news__article .sec-news__info .article__type--sec {
+    text-align: center; }
+  .news-body main .sec-news .sec-news__article .sec-news__info h3 {
+    text-align: center; }
+  .news-body main .other-news .other-news__article {
+    flex-direction: column; }
+    .news-body main .other-news .other-news__article .other-news__imgcontainer {
+      height: 250px; }
+      .news-body main .other-news .other-news__article .other-news__imgcontainer .other-news__imgcontainer--img {
+        width: 100%;
+        object-fit: cover; } }
 
 @media screen and (max-width: 576px) {
   .container {
@@ -578,9 +617,16 @@ footer {
         font-size: 2.1rem; }
       .catalogue-body main .promo .promo__content .promo__album .album__description p, .catalogue-body main .promo .promo__content .notable__album .album__description p, .catalogue-body main .promo .promo__content .classics__album .album__description p, .catalogue-body main .promo .notable__content .promo__album .album__description p, .catalogue-body main .promo .notable__content .notable__album .album__description p, .catalogue-body main .promo .notable__content .classics__album .album__description p, .catalogue-body main .promo .classics__content .promo__album .album__description p, .catalogue-body main .promo .classics__content .notable__album .album__description p, .catalogue-body main .promo .classics__content .classics__album .album__description p, .catalogue-body main .notable .promo__content .promo__album .album__description p, .catalogue-body main .notable .promo__content .notable__album .album__description p, .catalogue-body main .notable .promo__content .classics__album .album__description p, .catalogue-body main .notable .notable__content .promo__album .album__description p, .catalogue-body main .notable .notable__content .notable__album .album__description p, .catalogue-body main .notable .notable__content .classics__album .album__description p, .catalogue-body main .notable .classics__content .promo__album .album__description p, .catalogue-body main .notable .classics__content .notable__album .album__description p, .catalogue-body main .notable .classics__content .classics__album .album__description p, .catalogue-body main .classics .promo__content .promo__album .album__description p, .catalogue-body main .classics .promo__content .notable__album .album__description p, .catalogue-body main .classics .promo__content .classics__album .album__description p, .catalogue-body main .classics .notable__content .promo__album .album__description p, .catalogue-body main .classics .notable__content .notable__album .album__description p, .catalogue-body main .classics .notable__content .classics__album .album__description p, .catalogue-body main .classics .classics__content .promo__album .album__description p, .catalogue-body main .classics .classics__content .notable__album .album__description p, .catalogue-body main .classics .classics__content .classics__album .album__description p {
         font-size: 1.6rem; }
+  .recs-body {
+    grid-template-rows: 125px auto 360px; }
+    .recs-body .AOTW-section .recs-section .rec-album .rec-album__cover {
+      width: 90%; }
+    .recs-body .AOTW-section .recs-section .rec-album .rec-album__info {
+      width: 90%; }
   .merch-body {
-    grid-template-rows: 140px auto 360px;
-    justify-content: center;
-    overflow-x: hidden; }
+    grid-template-rows: 140px auto 360px; }
   .news-body {
-    grid-template-rows: 140px auto auto auto 360px; } }
+    grid-template-rows: 140px auto auto auto 360px; }
+  .recs-body, .merch-body, .news-body {
+    justify-content: center;
+    overflow-x: hidden; } }

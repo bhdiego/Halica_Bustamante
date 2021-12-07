@@ -15,39 +15,6 @@
     width: 100%;
     height: 100%;
 
-    .navbar {
-        grid-area: navbar;
-        background-color: transparent;
-
-        .container-fluid {
-
-            #navbar-title {
-                font-size: 3rem;
-                color: $main-color;
-                font-weight: $black-weight;
-                padding: 0 4rem;
-            }
-
-            .collapse {
-
-                .navbar-nav {
-                    padding: 0 2rem;
-
-                    .nav-item {
-                        padding: 0 2rem;
-
-                        #nlt {
-                            color: $secondary-color;
-                            font-size: 2rem;
-                            font-weight: $black-weight;
-                            font-style: italic;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
     .section-1 {
         grid-area: section-1;
         display: flex;
@@ -244,39 +211,6 @@
     width: 100%;
     height: 100%;
 
-    .navbar {
-        grid-area: navbar;
-        background-color: transparent;
-
-        .container-fluid {
-
-            #navbar-title {
-                font-size: 3rem;
-                color: $main-color;
-                font-weight: $black-weight;
-                padding: 0 4rem;
-            }
-
-            .collapse {
-
-                .navbar-nav {
-                    padding: 0 2rem;
-
-                    .nav-item {
-                        padding: 0 2rem;
-
-                        #nlt {
-                            color: #0096c7;
-                            font-size: 2rem;
-                            font-weight: 900;
-                            font-style: italic;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
     .promo {
         grid-area: promo;
     }
@@ -373,39 +307,6 @@
     width: 100%;
     height: 100%;
 
-    .navbar {
-        grid-area: navbar;
-        background-color: transparent;
-
-        .container-fluid {
-
-            #navbar-title {
-                font-size: 3rem;
-                color: $main-color;
-                font-weight: $black-weight;
-                padding: 0 4rem;
-            }
-
-            .collapse {
-
-                .navbar-nav {
-                    padding: 0 2rem;
-
-                    .nav-item {
-                        padding: 0 2rem;
-
-                        #nlt {
-                            color: #0096c7;
-                            font-size: 2rem;
-                            font-weight: 900;
-                            font-style: italic;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    
     .AOTW-section {
         grid-area: recs;
         display: flex;
@@ -498,39 +399,6 @@
       "footer";
     width: 100%;
     height: 100%;
-
-    .navbar {
-        grid-area: navbar;
-        background-color: transparent;
-
-        .container-fluid {
-
-            #navbar-title {
-                font-size: 3rem;
-                color: $main-color;
-                font-weight: $black-weight;
-                padding: 0 4rem;
-            }
-
-            .collapse {
-
-                .navbar-nav {
-                    padding: 0 2rem;
-
-                    .nav-item {
-                        padding: 0 2rem;
-
-                        #nlt {
-                            color: #0096c7;
-                            font-size: 2rem;
-                            font-weight: 900;
-                            font-style: italic;
-                        }
-                    }
-                }
-            }
-        }
-    }
     
     .afx, .merch {
         display: flex;
@@ -610,39 +478,6 @@
       "articles"
       "ac"
       "footer";
-
-    .navbar {
-        grid-area: navbar;
-        background-color: transparent;
-
-        .container-fluid {
-
-            #navbar-title {
-                font-size: 3rem;
-                color: $main-color;
-                font-weight: $black-weight;
-                padding: 0 4rem;
-            }
-
-            .collapse {
-
-                .navbar-nav {
-                    padding: 0 2rem;
-
-                    .nav-item {
-                        padding: 0 2rem;
-
-                        #nlt {
-                            color: #0096c7;
-                            font-size: 2rem;
-                            font-weight: 900;
-                            font-style: italic;
-                        }
-                    }
-                }
-            }
-        }
-    }
 
     .main-article {
         grid-area: main;
@@ -808,39 +643,6 @@
       "footer"; 
     width: 100%;
     height: 100%;
-
-    .navbar {
-        grid-area: navbar;
-        background-color: transparent;
-
-        .container-fluid {
-
-            #navbar-title {
-                font-size: 3rem;
-                color: $main-color;
-                font-weight: $black-weight;
-                padding: 0 4rem;
-            }
-
-            .collapse {
-
-                .navbar-nav {
-                    padding: 0 2rem;
-
-                    .nav-item {
-                        padding: 0 2rem;
-
-                        #nlt {
-                            color: #0096c7;
-                            font-size: 2rem;
-                            font-weight: 900;
-                            font-style: italic;
-                        }
-                    }
-                }
-            }
-        }
-    }
 
     .error {
         display: flex;

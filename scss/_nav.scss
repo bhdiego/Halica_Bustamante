@@ -1,0 +1,60 @@
+.navbar {
+    grid-area: navbar;
+    background-color: transparent;
+
+    .container-fluid {
+
+        #navbar-title {
+            font-size: 3rem;
+            color: $main-color;
+            font-weight: $black-weight;
+            padding: 0 4rem;
+        }
+
+        .collapse {
+
+            .navbar-nav {
+                padding: 0 2rem;
+
+                .nav-item {
+                    padding: 0 2rem;
+
+                    #nlt {
+                        color: $secondary-color;
+                        font-size: 2rem;
+                        font-weight: $black-weight;
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar {
+
+        .container-fluid {
+
+            #navbar-title {
+                font-size: 2.5rem;
+                padding: 0 2rem;
+            }
+
+            .collapse {
+
+                .navbar-nav {
+                    padding: 0 3rem;
+
+                    .nav-item {
+                        padding: 0;
+
+                        #nlt {
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

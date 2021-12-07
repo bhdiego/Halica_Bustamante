@@ -16,23 +16,6 @@ html {
   grid-template-areas: "navbar navbar" "section-1 section-1" "section-2 section-2" "serv serv" "products products" "footer footer";
   width: 100%;
   height: 100%; }
-  .index-container .navbar {
-    grid-area: navbar;
-    background-color: transparent; }
-    .index-container .navbar .container-fluid #navbar-title, .index-container .navbar .container-sm #navbar-title, .index-container .navbar .container-md #navbar-title, .index-container .navbar .container-lg #navbar-title, .index-container .navbar .container-xl #navbar-title, .index-container .navbar .container-xxl #navbar-title {
-      font-size: 3rem;
-      color: #e1148f;
-      font-weight: 900;
-      padding: 0 4rem; }
-    .index-container .navbar .container-fluid .collapse .navbar-nav, .index-container .navbar .container-sm .collapse .navbar-nav, .index-container .navbar .container-md .collapse .navbar-nav, .index-container .navbar .container-lg .collapse .navbar-nav, .index-container .navbar .container-xl .collapse .navbar-nav, .index-container .navbar .container-xxl .collapse .navbar-nav {
-      padding: 0 2rem; }
-      .index-container .navbar .container-fluid .collapse .navbar-nav .nav-item, .index-container .navbar .container-sm .collapse .navbar-nav .nav-item, .index-container .navbar .container-md .collapse .navbar-nav .nav-item, .index-container .navbar .container-lg .collapse .navbar-nav .nav-item, .index-container .navbar .container-xl .collapse .navbar-nav .nav-item, .index-container .navbar .container-xxl .collapse .navbar-nav .nav-item {
-        padding: 0 2rem; }
-        .index-container .navbar .container-fluid .collapse .navbar-nav .nav-item #nlt, .index-container .navbar .container-sm .collapse .navbar-nav .nav-item #nlt, .index-container .navbar .container-md .collapse .navbar-nav .nav-item #nlt, .index-container .navbar .container-lg .collapse .navbar-nav .nav-item #nlt, .index-container .navbar .container-xl .collapse .navbar-nav .nav-item #nlt, .index-container .navbar .container-xxl .collapse .navbar-nav .nav-item #nlt {
-          color: #0096c7;
-          font-size: 2rem;
-          font-weight: 900;
-          font-style: italic; }
   .index-container .section-1 {
     grid-area: section-1;
     display: flex; }
@@ -165,23 +148,6 @@ html {
   overflow-x: hidden;
   width: 100%;
   height: 100%; }
-  .catalogue-body .navbar {
-    grid-area: navbar;
-    background-color: transparent; }
-    .catalogue-body .navbar .container-fluid #navbar-title, .catalogue-body .navbar .container-sm #navbar-title, .catalogue-body .navbar .container-md #navbar-title, .catalogue-body .navbar .container-lg #navbar-title, .catalogue-body .navbar .container-xl #navbar-title, .catalogue-body .navbar .container-xxl #navbar-title {
-      font-size: 3rem;
-      color: #e1148f;
-      font-weight: 900;
-      padding: 0 4rem; }
-    .catalogue-body .navbar .container-fluid .collapse .navbar-nav, .catalogue-body .navbar .container-sm .collapse .navbar-nav, .catalogue-body .navbar .container-md .collapse .navbar-nav, .catalogue-body .navbar .container-lg .collapse .navbar-nav, .catalogue-body .navbar .container-xl .collapse .navbar-nav, .catalogue-body .navbar .container-xxl .collapse .navbar-nav {
-      padding: 0 2rem; }
-      .catalogue-body .navbar .container-fluid .collapse .navbar-nav .nav-item, .catalogue-body .navbar .container-sm .collapse .navbar-nav .nav-item, .catalogue-body .navbar .container-md .collapse .navbar-nav .nav-item, .catalogue-body .navbar .container-lg .collapse .navbar-nav .nav-item, .catalogue-body .navbar .container-xl .collapse .navbar-nav .nav-item, .catalogue-body .navbar .container-xxl .collapse .navbar-nav .nav-item {
-        padding: 0 2rem; }
-        .catalogue-body .navbar .container-fluid .collapse .navbar-nav .nav-item #nlt, .catalogue-body .navbar .container-sm .collapse .navbar-nav .nav-item #nlt, .catalogue-body .navbar .container-md .collapse .navbar-nav .nav-item #nlt, .catalogue-body .navbar .container-lg .collapse .navbar-nav .nav-item #nlt, .catalogue-body .navbar .container-xl .collapse .navbar-nav .nav-item #nlt, .catalogue-body .navbar .container-xxl .collapse .navbar-nav .nav-item #nlt {
-          color: #0096c7;
-          font-size: 2rem;
-          font-weight: 900;
-          font-style: italic; }
   .catalogue-body .promo {
     grid-area: promo; }
   .catalogue-body .notable {
@@ -242,23 +208,6 @@ html {
   grid-template-areas: "navbar" "recs" "footer";
   width: 100%;
   height: 100%; }
-  .recs-body .navbar {
-    grid-area: navbar;
-    background-color: transparent; }
-    .recs-body .navbar .container-fluid #navbar-title, .recs-body .navbar .container-sm #navbar-title, .recs-body .navbar .container-md #navbar-title, .recs-body .navbar .container-lg #navbar-title, .recs-body .navbar .container-xl #navbar-title, .recs-body .navbar .container-xxl #navbar-title {
-      font-size: 3rem;
-      color: #e1148f;
-      font-weight: 900;
-      padding: 0 4rem; }
-    .recs-body .navbar .container-fluid .collapse .navbar-nav, .recs-body .navbar .container-sm .collapse .navbar-nav, .recs-body .navbar .container-md .collapse .navbar-nav, .recs-body .navbar .container-lg .collapse .navbar-nav, .recs-body .navbar .container-xl .collapse .navbar-nav, .recs-body .navbar .container-xxl .collapse .navbar-nav {
-      padding: 0 2rem; }
-      .recs-body .navbar .container-fluid .collapse .navbar-nav .nav-item, .recs-body .navbar .container-sm .collapse .navbar-nav .nav-item, .recs-body .navbar .container-md .collapse .navbar-nav .nav-item, .recs-body .navbar .container-lg .collapse .navbar-nav .nav-item, .recs-body .navbar .container-xl .collapse .navbar-nav .nav-item, .recs-body .navbar .container-xxl .collapse .navbar-nav .nav-item {
-        padding: 0 2rem; }
-        .recs-body .navbar .container-fluid .collapse .navbar-nav .nav-item #nlt, .recs-body .navbar .container-sm .collapse .navbar-nav .nav-item #nlt, .recs-body .navbar .container-md .collapse .navbar-nav .nav-item #nlt, .recs-body .navbar .container-lg .collapse .navbar-nav .nav-item #nlt, .recs-body .navbar .container-xl .collapse .navbar-nav .nav-item #nlt, .recs-body .navbar .container-xxl .collapse .navbar-nav .nav-item #nlt {
-          color: #0096c7;
-          font-size: 2rem;
-          font-weight: 900;
-          font-style: italic; }
   .recs-body .AOTW-section {
     grid-area: recs;
     display: flex;
@@ -319,23 +268,6 @@ html {
   grid-template-areas: "navbar" "main" "footer";
   width: 100%;
   height: 100%; }
-  .merch-body .navbar {
-    grid-area: navbar;
-    background-color: transparent; }
-    .merch-body .navbar .container-fluid #navbar-title, .merch-body .navbar .container-sm #navbar-title, .merch-body .navbar .container-md #navbar-title, .merch-body .navbar .container-lg #navbar-title, .merch-body .navbar .container-xl #navbar-title, .merch-body .navbar .container-xxl #navbar-title {
-      font-size: 3rem;
-      color: #e1148f;
-      font-weight: 900;
-      padding: 0 4rem; }
-    .merch-body .navbar .container-fluid .collapse .navbar-nav, .merch-body .navbar .container-sm .collapse .navbar-nav, .merch-body .navbar .container-md .collapse .navbar-nav, .merch-body .navbar .container-lg .collapse .navbar-nav, .merch-body .navbar .container-xl .collapse .navbar-nav, .merch-body .navbar .container-xxl .collapse .navbar-nav {
-      padding: 0 2rem; }
-      .merch-body .navbar .container-fluid .collapse .navbar-nav .nav-item, .merch-body .navbar .container-sm .collapse .navbar-nav .nav-item, .merch-body .navbar .container-md .collapse .navbar-nav .nav-item, .merch-body .navbar .container-lg .collapse .navbar-nav .nav-item, .merch-body .navbar .container-xl .collapse .navbar-nav .nav-item, .merch-body .navbar .container-xxl .collapse .navbar-nav .nav-item {
-        padding: 0 2rem; }
-        .merch-body .navbar .container-fluid .collapse .navbar-nav .nav-item #nlt, .merch-body .navbar .container-sm .collapse .navbar-nav .nav-item #nlt, .merch-body .navbar .container-md .collapse .navbar-nav .nav-item #nlt, .merch-body .navbar .container-lg .collapse .navbar-nav .nav-item #nlt, .merch-body .navbar .container-xl .collapse .navbar-nav .nav-item #nlt, .merch-body .navbar .container-xxl .collapse .navbar-nav .nav-item #nlt {
-          color: #0096c7;
-          font-size: 2rem;
-          font-weight: 900;
-          font-style: italic; }
   .merch-body .afx, .merch-body .merch {
     display: flex;
     flex-direction: column; }
@@ -388,23 +320,6 @@ html {
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto 300px;
   grid-template-areas: "navbar" "main" "articles" "ac" "footer"; }
-  .news-body .navbar {
-    grid-area: navbar;
-    background-color: transparent; }
-    .news-body .navbar .container-fluid #navbar-title, .news-body .navbar .container-sm #navbar-title, .news-body .navbar .container-md #navbar-title, .news-body .navbar .container-lg #navbar-title, .news-body .navbar .container-xl #navbar-title, .news-body .navbar .container-xxl #navbar-title {
-      font-size: 3rem;
-      color: #e1148f;
-      font-weight: 900;
-      padding: 0 4rem; }
-    .news-body .navbar .container-fluid .collapse .navbar-nav, .news-body .navbar .container-sm .collapse .navbar-nav, .news-body .navbar .container-md .collapse .navbar-nav, .news-body .navbar .container-lg .collapse .navbar-nav, .news-body .navbar .container-xl .collapse .navbar-nav, .news-body .navbar .container-xxl .collapse .navbar-nav {
-      padding: 0 2rem; }
-      .news-body .navbar .container-fluid .collapse .navbar-nav .nav-item, .news-body .navbar .container-sm .collapse .navbar-nav .nav-item, .news-body .navbar .container-md .collapse .navbar-nav .nav-item, .news-body .navbar .container-lg .collapse .navbar-nav .nav-item, .news-body .navbar .container-xl .collapse .navbar-nav .nav-item, .news-body .navbar .container-xxl .collapse .navbar-nav .nav-item {
-        padding: 0 2rem; }
-        .news-body .navbar .container-fluid .collapse .navbar-nav .nav-item #nlt, .news-body .navbar .container-sm .collapse .navbar-nav .nav-item #nlt, .news-body .navbar .container-md .collapse .navbar-nav .nav-item #nlt, .news-body .navbar .container-lg .collapse .navbar-nav .nav-item #nlt, .news-body .navbar .container-xl .collapse .navbar-nav .nav-item #nlt, .news-body .navbar .container-xxl .collapse .navbar-nav .nav-item #nlt {
-          color: #0096c7;
-          font-size: 2rem;
-          font-weight: 900;
-          font-style: italic; }
   .news-body .main-article {
     grid-area: main;
     display: flex;
@@ -511,23 +426,6 @@ html {
   grid-template-areas: "navbar" "error" "footer";
   width: 100%;
   height: 100%; }
-  .error-body .navbar {
-    grid-area: navbar;
-    background-color: transparent; }
-    .error-body .navbar .container-fluid #navbar-title, .error-body .navbar .container-sm #navbar-title, .error-body .navbar .container-md #navbar-title, .error-body .navbar .container-lg #navbar-title, .error-body .navbar .container-xl #navbar-title, .error-body .navbar .container-xxl #navbar-title {
-      font-size: 3rem;
-      color: #e1148f;
-      font-weight: 900;
-      padding: 0 4rem; }
-    .error-body .navbar .container-fluid .collapse .navbar-nav, .error-body .navbar .container-sm .collapse .navbar-nav, .error-body .navbar .container-md .collapse .navbar-nav, .error-body .navbar .container-lg .collapse .navbar-nav, .error-body .navbar .container-xl .collapse .navbar-nav, .error-body .navbar .container-xxl .collapse .navbar-nav {
-      padding: 0 2rem; }
-      .error-body .navbar .container-fluid .collapse .navbar-nav .nav-item, .error-body .navbar .container-sm .collapse .navbar-nav .nav-item, .error-body .navbar .container-md .collapse .navbar-nav .nav-item, .error-body .navbar .container-lg .collapse .navbar-nav .nav-item, .error-body .navbar .container-xl .collapse .navbar-nav .nav-item, .error-body .navbar .container-xxl .collapse .navbar-nav .nav-item {
-        padding: 0 2rem; }
-        .error-body .navbar .container-fluid .collapse .navbar-nav .nav-item #nlt, .error-body .navbar .container-sm .collapse .navbar-nav .nav-item #nlt, .error-body .navbar .container-md .collapse .navbar-nav .nav-item #nlt, .error-body .navbar .container-lg .collapse .navbar-nav .nav-item #nlt, .error-body .navbar .container-xl .collapse .navbar-nav .nav-item #nlt, .error-body .navbar .container-xxl .collapse .navbar-nav .nav-item #nlt {
-          color: #0096c7;
-          font-size: 2rem;
-          font-weight: 900;
-          font-style: italic; }
   .error-body .error {
     display: flex;
     flex-direction: column;
@@ -546,6 +444,35 @@ html {
         font-style: italic;
         text-decoration: none;
         color: #e1148f; }
+
+.navbar {
+  grid-area: navbar;
+  background-color: transparent; }
+  .navbar .container-fluid #navbar-title, .navbar .container-sm #navbar-title, .navbar .container-md #navbar-title, .navbar .container-lg #navbar-title, .navbar .container-xl #navbar-title, .navbar .container-xxl #navbar-title {
+    font-size: 3rem;
+    color: #e1148f;
+    font-weight: 900;
+    padding: 0 4rem; }
+  .navbar .container-fluid .collapse .navbar-nav, .navbar .container-sm .collapse .navbar-nav, .navbar .container-md .collapse .navbar-nav, .navbar .container-lg .collapse .navbar-nav, .navbar .container-xl .collapse .navbar-nav, .navbar .container-xxl .collapse .navbar-nav {
+    padding: 0 2rem; }
+    .navbar .container-fluid .collapse .navbar-nav .nav-item, .navbar .container-sm .collapse .navbar-nav .nav-item, .navbar .container-md .collapse .navbar-nav .nav-item, .navbar .container-lg .collapse .navbar-nav .nav-item, .navbar .container-xl .collapse .navbar-nav .nav-item, .navbar .container-xxl .collapse .navbar-nav .nav-item {
+      padding: 0 2rem; }
+      .navbar .container-fluid .collapse .navbar-nav .nav-item #nlt, .navbar .container-sm .collapse .navbar-nav .nav-item #nlt, .navbar .container-md .collapse .navbar-nav .nav-item #nlt, .navbar .container-lg .collapse .navbar-nav .nav-item #nlt, .navbar .container-xl .collapse .navbar-nav .nav-item #nlt, .navbar .container-xxl .collapse .navbar-nav .nav-item #nlt {
+        color: #0096c7;
+        font-size: 2rem;
+        font-weight: 900;
+        font-style: italic; }
+
+@media screen and (max-width: 576px) {
+  .navbar .container-fluid #navbar-title, .navbar .container-sm #navbar-title, .navbar .container-md #navbar-title, .navbar .container-lg #navbar-title, .navbar .container-xl #navbar-title, .navbar .container-xxl #navbar-title {
+    font-size: 2.5rem;
+    padding: 0 2rem; }
+  .navbar .container-fluid .collapse .navbar-nav, .navbar .container-sm .collapse .navbar-nav, .navbar .container-md .collapse .navbar-nav, .navbar .container-lg .collapse .navbar-nav, .navbar .container-xl .collapse .navbar-nav, .navbar .container-xxl .collapse .navbar-nav {
+    padding: 0 3rem; }
+    .navbar .container-fluid .collapse .navbar-nav .nav-item, .navbar .container-sm .collapse .navbar-nav .nav-item, .navbar .container-md .collapse .navbar-nav .nav-item, .navbar .container-lg .collapse .navbar-nav .nav-item, .navbar .container-xl .collapse .navbar-nav .nav-item, .navbar .container-xxl .collapse .navbar-nav .nav-item {
+      padding: 0; }
+      .navbar .container-fluid .collapse .navbar-nav .nav-item #nlt, .navbar .container-sm .collapse .navbar-nav .nav-item #nlt, .navbar .container-md .collapse .navbar-nav .nav-item #nlt, .navbar .container-lg .collapse .navbar-nav .nav-item #nlt, .navbar .container-xl .collapse .navbar-nav .nav-item #nlt, .navbar .container-xxl .collapse .navbar-nav .nav-item #nlt {
+        font-size: 1.8rem; } }
 
 footer {
   grid-area: footer;

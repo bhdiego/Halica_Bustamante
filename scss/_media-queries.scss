@@ -60,6 +60,16 @@
 @media screen and (max-width: 992px) {
     .index-container {
         grid-template-rows: auto 400px auto auto auto 250px;
+
+        .products-section {
+
+            .new-products {
+
+                .new-products__info {
+                    text-align: center;
+                }
+            }
+        }
     }
 
     .news-body {
@@ -72,7 +82,7 @@
     
                     h2 {
                         .article__title--main {
-                            font-size: 3rem;
+                            font-size: 2.7rem;
                         }
                     }
                 }
@@ -270,6 +280,27 @@
     
     .news-body {
         grid-template-rows: auto auto auto auto 360px;
+
+        main {
+
+            .main-article {
+                padding: 2rem;
+
+                .main-article__info {
+
+                    h2 {
+                        .article__title--main {
+                            font-size: 2.4rem;
+                        }
+                    }
+
+                    .article__description--main {
+                        font-size: 1.5rem;
+                        font-weight: $semibold-weight;
+                    }
+                }
+            }
+        }
     }
 
     .error-body {

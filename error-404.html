@@ -7,24 +7,41 @@
     <title>Página no encontrada - Halica Records</title>
     <meta name="author" content="Diego Bustamante">
     <meta name="copyright" content="Halica Records">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body class="error-body">
-    <header class="header">
-        <h1 class="h1 text-shadow-drop-center"><a href="index.html" class="header__title">Halica Records</a></h1>
-        <nav>
-            <ul class="nav header-menu animate__animated animate__fadeInUp">
-                <li class="nav__element"><a href="catalogue.html" class="nav__item">Catálogo</a>
-                <li class="nav__element"><a href="recommended.html" class="nav__item">Recomendados</a></li>
-                <li class="nav__element"><a href="merch.html" class="nav__item">Merch</a></li>
-                <li class="nav__element"><a href="news.html" class="nav__item">Noticias</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-5">
+        <div class="container-fluid">
+          <a class="navbar-brand fst-italic" id="navbar-title" href="index.html">Halica Records</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto fst-italic">
+              <li class="nav-item fw-bold">
+                <a class="nav-link" id="nlt" href="catalogue.html">Catálogo</a>
+              </li>
+              <li class="nav-item fw-bold">
+                <a class="nav-link" id="nlt" href="recommended.html">Recomendados</a>
+              </li>
+              <li class="nav-item fw-bold">
+                <a class="nav-link" id="nlt" href="merch.html">Merch</a>
+              </li>
+              <li class="nav-item fw-bold">
+                <a class="nav-link" id="nlt" href="news.html">Noticias</a>
+              </li>
             </ul>
-        </nav>
-    </header>
+          </div>
+        </div>
+    </nav>
     <div class="error">
         <a class="error__redirect" href="index.html"><img class="error__redirect--img" src="img/error/cd-error.jpg" alt="ERROR 404"></a>
         <h3 class="error__title">Página no encontrada</h3>
@@ -52,5 +69,15 @@
             </div>
         </div>
     </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
 </body>
 </html>

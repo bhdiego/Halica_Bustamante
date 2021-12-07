@@ -257,6 +257,17 @@
         grid-template-rows: auto auto 360px;
 
         .AOTW-section {
+            grid-area: recs;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            .AOTW-section__title {
+    
+                .AOTW-section__title--h2 {
+                    font-size: 2.5rem;
+                }
+            }
 
             .recs-section {
                 
@@ -276,6 +287,33 @@
 
     .merch-body {
         grid-template-rows: auto auto 360px;
+
+        .afx, .merch {
+
+            .afx__title, .merch__title {
+    
+                .afx__title--h2, .merch__title--h2 {
+                    font-size: 2.5rem;
+                    font-weight: $xbold-weight;
+                }
+            }
+    
+            .afx__merch, .music__merch {
+                
+                .afx__item, .music__item {
+                    
+                    .afx__item_ph, .music__item_ph {
+                        width: 270px;
+                        height: 270px;
+                        overflow: hidden;
+                    }
+    
+                    .afx__item_description, .music__item_description {
+                        width: 270px;
+                    }
+                }
+            }
+        }
     }
     
     .news-body {

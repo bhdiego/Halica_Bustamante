@@ -188,6 +188,7 @@
         .section-1, .section-2 {
 
             .section-1__new-release, .section-2__aotw, .section-2__classic {
+                padding: 3rem 2rem;
 
                 .new-release__type, .aotw__type, .classic__type {
                     padding-bottom: 1.4rem;
@@ -200,6 +201,17 @@
                 .new-release__description, .aotw__description, .classic__description {
                     width: 100%;
                     font-size: 1.5rem;
+                }
+            }
+        }
+
+        .products-section {
+    
+            .products-section__title {
+    
+                .products-section__title--title-name {
+                    font-size: 2.5rem;
+                    font-weight: $black-weight;
                 }
             }
         }
@@ -343,5 +355,34 @@
 
     .error-body {
         grid-template-rows: auto auto 360px;
+    }
+
+    .index-container, .catalogue-body, .recs-body, .merch-body, .news-body, .error-body {
+        
+        .navbar {
+
+            .container-fluid {
+    
+                #navbar-title {
+                    font-size: 2.5rem;
+                    padding: 0 2rem;
+                }
+    
+                .collapse {
+    
+                    .navbar-nav {
+                        padding: 0 3rem;
+    
+                        .nav-item {
+                            padding: 0;
+    
+                            #nlt {
+                                font-size: 1.8rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

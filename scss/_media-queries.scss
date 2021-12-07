@@ -1,0 +1,264 @@
+// Index
+
+@media screen and (max-width: 1280px) {
+    .container {
+        grid-template-rows: 140px 400px auto auto auto 200px;
+    }
+
+    .news-body {
+        
+        main {
+
+            .main-article {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .main-article__imgcontainer {
+                    max-width: 100vw;
+                }
+
+                .main-article__info {
+                    width: 100%;
+                    box-sizing: border-box;
+                    text-align: center;
+
+                    h3 {
+                        .article__title--main {
+                            font-size: 3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .recs-body {
+
+        .AOTW-section {
+            
+            .recs-section {
+
+                .rec-album {
+                    flex-direction: column;
+                    align-items: center;
+
+                    .rec-album__cover {
+                        width: 75%;
+                    }
+
+                    .rec-album__info {
+                        width: 75%;
+                        border-right: $sc-border;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        grid-template-rows: 140px 400px auto auto auto 200px;
+    }
+
+    .news-body {
+
+        main {
+
+            .main-article {
+
+                .main-article__info {
+    
+                    h2 {
+                        .article__title--main {
+                            font-size: 3rem;
+                        }
+                    }
+                }
+            }
+    
+            .sec-news {
+                flex-direction: column;
+                align-items: center;
+    
+                .sec-news__article {
+                    width: 75vw;
+                    margin: 3rem 0;
+    
+                    .sec-news__imgcontainer {
+    
+                        .sec-news__imgcontainer--img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        
+        .section-2 {
+            grid-template-rows: 140px 400px auto auto auto 200px;
+            flex-direction: column;
+        }
+
+        .service-items {
+            flex-direction: column;
+            height: 250px;
+
+            div {
+                
+                p {
+                    font-size: 1.8rem;
+                    width: 90vw;
+                }
+            }
+        }
+    }
+
+    .news-body {
+
+        main {
+            
+            .sec-news {
+
+                .sec-news__article {
+
+                    .sec-news__info {
+
+                        .article__type--sec {
+                            text-align: center;
+                        }
+
+                        h3 {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+
+            .other-news {
+                
+                .other-news__article {
+                    flex-direction: column;
+
+                    .other-news__imgcontainer {
+                        height: 250px;
+
+                        .other-news__imgcontainer--img {
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .error-body {
+        
+        .error__redirect {
+            
+            .error__redirect--img {
+                width: 90vw;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        grid-template-rows: 140px 400px auto auto auto 360px;
+    }
+
+    .catalogue-body {
+        grid-template-rows: 140px auto auto auto 360px;
+
+        main {
+            .promo, .notable, .classics {
+
+                .promo__section-title, .notable__section-title, .classics__section-title {
+        
+                    .promo__section-title--h2, .notable__section-title--h2, .classics__section-title--h2 {
+                        text-align: center;
+                        font-size: 2rem;
+                        font-weight: $black-weight;
+                        font-style: italic;
+                        padding: 3rem 0;
+                    }
+                }
+
+                .promo__content, .notable__content, .classics__content {
+
+                    .promo__album, .notable__album, .classics__album {
+
+                        .album-cover {
+                            overflow: hidden;
+                            width: 75vw;
+                            height: fit-content;
+                        }
+
+                        .album__description {
+                            text-align: center;
+                            width: 75vw;
+
+                            h3 {
+                                
+                                a {
+                                    font-size: 2.1rem;
+                                }
+                            }
+
+                            p {
+                                font-size: 1.6rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .recs-body {
+        grid-template-rows: 125px auto 360px;
+
+        .AOTW-section {
+
+            .recs-section {
+                
+                .rec-album {
+
+                    .rec-album__cover {
+                        width: 90%;
+                    }
+
+                    .rec-album__info {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+
+    .merch-body {
+        grid-template-rows: 140px auto 360px;
+    }
+    
+    .news-body {
+        grid-template-rows: 140px auto auto auto 360px;
+    }
+
+    .error-body {
+        grid-template-rows: 140px auto 360px;
+    }
+
+    .recs-body, .merch-body, .news-body, .error-body {
+        justify-content: center;
+        overflow-x: hidden;
+    }
+}

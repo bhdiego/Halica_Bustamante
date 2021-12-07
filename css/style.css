@@ -8,275 +8,197 @@
 html {
   font-size: 62.5%; }
 
-.p-1 {
-  padding: 0.5rem; }
-
-.p-2 {
-  padding: 1rem; }
-
-.p-3 {
-  padding: 1.5rem; }
-
-.p-4 {
-  padding: 2rem; }
-
-.p-5 {
-  padding: 2.5rem; }
-
-.p-6 {
-  padding: 3rem; }
-
-.p-7 {
-  padding: 3.5rem; }
-
-.p-8 {
-  padding: 4rem; }
-
-.px-1 {
-  padding: 0 0.5rem; }
-
-.px-2 {
-  padding: 0 1rem; }
-
-.px-3 {
-  padding: 0 1.5rem; }
-
-.px-4 {
-  padding: 0 2rem; }
-
-.px-5 {
-  padding: 0 2.5rem; }
-
-.px-6 {
-  padding: 0 3rem; }
-
-.px-7 {
-  padding: 0 3.5rem; }
-
-.px-8 {
-  padding: 0 4rem; }
-
-.py-1 {
-  padding: 0.5rem 0; }
-
-.py-2 {
-  padding: 1rem 0; }
-
-.py-3 {
-  padding: 1.5rem 0; }
-
-.py-4 {
-  padding: 2rem 0; }
-
-.py-5 {
-  padding: 2.5rem 0; }
-
-.py-6 {
-  padding: 3rem 0; }
-
-.py-7 {
-  padding: 3.5rem 0; }
-
-.py-8 {
-  padding: 4rem 0; }
-
-.container {
-  display: grid;
-  grid-auto-columns: 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 125px 500px 450px auto 200px;
-  gap: 1px 1px;
-  grid-template-areas: "header header" "section-1 section-1" "aotw classic" "products products" "footer footer";
-  width: 100%;
-  height: 100%; }
-
-.news-body {
-  display: grid;
-  grid-auto-columns: 1fr;
-  grid-template-columns: 1fr;
-  grid-template-rows: 125px auto auto auto 200px;
-  grid-template-areas: "header" "main" "articles" "ac" "footer"; }
-
 .header {
   grid-area: header;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  box-sizing: border-box;
   align-items: center;
-  border-bottom: 1px solid #eeeeee; }
+  border-bottom: 1px solid #eeeeee;
+  padding: 2rem; }
   .header .header__title {
-    font-size: 3.7rem;
+    font-size: 3.3rem;
     font-weight: 900;
     font-style: italic;
     text-decoration: none;
-    color: #e1148f; }
+    color: #e1148f;
+    padding: 0 2rem; }
   .header .nav {
     display: flex;
-    flex-direction: row;
-    justify-content: center; }
+    flex-direction: row; }
     .header .nav .nav__element {
       list-style: none;
-      padding-left: 4rem; }
+      padding: 2rem; }
       .header .nav .nav__element .nav__item {
-        font-size: 2.5rem;
-        font-weight: 700;
+        font-size: 2rem;
+        font-weight: 900;
         font-style: italic;
+        text-transform: lowercase;
         text-decoration: none;
         color: #0096c7; }
 
 @media screen and (max-width: 1280px) {
-  .header .header__title {
-    font-size: 2.5rem; }
-  .header .nav__element {
-    padding: 2rem; }
-    .header .nav__element .nav__item {
-      font-size: 2rem; } }
+  .header .nav__element .nav__item {
+    font-size: 2rem; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .header {
-    grid-area: header;
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     background-color: #000000;
-    border-bottom: 1px solid #eeeeee;
-    padding: 2rem 0; } }
-
-.section-1 {
-  grid-area: section-1;
-  display: flex; }
-  .section-1 .section-1__new-release {
-    background-image: url(../img/main/magdalena-bay.jpg);
-    background-size: cover;
-    background-position-y: 20%;
-    width: 100vw;
-    box-sizing: border-box;
-    overflow: hidden; }
-    .section-1 .section-1__new-release .new-release__type {
-      font-size: 1.6rem;
-      font-weight: 300;
-      color: #ffffff;
-      text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7); }
-    .section-1 .section-1__new-release .new-release__title {
+    border-bottom: 1px solid #eeeeee; }
+    .header .h1 .header__title {
       font-size: 3rem;
       font-weight: 900;
       font-style: italic;
-      color: #ffffff;
-      text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); }
-    .section-1 .section-1__new-release .new-release__description {
-      width: 40%;
-      font-size: 1.8rem;
-      font-weight: 400;
-      font-style: italic;
-      color: #ffffff;
-      text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7); }
-
-.section-2 {
-  grid-area: aotw;
-  display: flex; }
-  .section-2 .section-2__aotw {
-    background-image: url(../img/main/weyes-blood.jpg);
-    background-size: cover;
-    background-position-y: 20%;
-    box-sizing: border-box;
-    overflow: hidden; }
-    .section-2 .section-2__aotw .aotw__type {
-      font-size: 1.6rem;
-      font-weight: 300;
-      color: #ffffff;
-      text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7); }
-    .section-2 .section-2__aotw .aotw__title {
-      font-size: 3rem;
-      font-weight: 900;
-      font-style: italic;
-      color: #ffffff;
-      text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); }
-    .section-2 .section-2__aotw .aotw__description {
-      width: 50%;
-      font-size: 1.8rem;
-      font-weight: 400;
-      font-style: italic;
-      color: #ffffff;
-      text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7); }
-
-.section-3 {
-  grid-area: classic;
-  display: flex; }
-  .section-3 .section-3__classic {
-    background-image: url(../img/main/loveless_cover.jpg);
-    background-size: cover;
-    background-position-y: 20%;
-    box-sizing: border-box;
-    overflow: hidden; }
-    .section-3 .section-3__classic .classic__type {
-      font-size: 1.6rem;
-      font-weight: 300;
-      color: #ffffff;
-      text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7); }
-    .section-3 .section-3__classic .classic__title {
-      font-size: 3rem;
-      font-weight: 900;
-      font-style: italic;
-      color: #ffffff;
-      text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); }
-    .section-3 .section-3__classic .classic__description {
-      width: 50%;
-      font-size: 1.8rem;
-      font-weight: 400;
-      font-style: italic;
-      padding: 3rem 0;
-      color: #ffffff;
-      text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7); }
-
-.products-section {
-  grid-area: products;
-  display: flex;
-  flex-direction: column; }
-  .products-section .products-section__title {
-    padding: 3rem 0;
-    border-bottom: 1px solid #eeeeee;
-    text-align: center; }
-    .products-section .products-section__title .products-section__title--title-name {
-      font-size: 3rem;
-      font-weight: 900;
+      text-decoration: none;
       color: #e1148f; }
-  .products-section .new-products {
+    .header .nav {
+      padding-left: 0; }
+      .header .nav .nav__element {
+        padding: 1rem 2rem 0; }
+        .header .nav .nav__element .nav__item {
+          font-size: 2rem;
+          color: #ffffff; } }
+
+@media screen and (max-width: 768px) {
+  .header .h1 {
+    margin-bottom: 2rem; }
+    .header .h1 .header__title {
+      font-size: 3rem;
+      font-weight: 900;
+      font-style: italic;
+      text-decoration: none;
+      color: #e1148f; }
+  .header .nav .nav__element {
+    padding: 0 3vw; }
+    .header .nav .nav__element .nav__item {
+      font-size: 1.8rem; } }
+
+@media screen and (max-width: 576px) {
+  .header .nav {
+    padding: 0 2rem; }
+    .header .nav .nav__element {
+      padding: 0 1.6rem; }
+      .header .nav .nav__element .nav__item {
+        font-size: 1.8rem; } }
+
+.container {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 140px 500px 450px auto auto 200px;
+  gap: 0 1px;
+  grid-template-areas: "header header" "section-1 section-1" "section-2 section-2" "serv serv" "products products" "footer footer";
+  width: 100%;
+  height: 100%; }
+  .container .section-1 {
+    grid-area: section-1;
+    display: flex; }
+    .container .section-1 .section-1__new-release {
+      background-image: url(../img/main/magdalena-bay.jpg); }
+      .container .section-1 .section-1__new-release .new-release__title {
+        font-size: 3rem; }
+      .container .section-1 .section-1__new-release .new-release__description {
+        width: 40%; }
+  .container .section-2 {
+    grid-area: section-2;
+    display: flex; }
+    .container .section-2 .section-2__aotw {
+      background-image: url(../img/main/weyes-blood.jpg); }
+    .container .section-2 .section-2__classic {
+      background-image: url(../img/main/loveless_cover.jpg); }
+  .container .section-1 .section-1__new-release, .container .section-1 .section-2__aotw, .container .section-1 .section-2__classic, .container .section-2 .section-1__new-release, .container .section-2 .section-2__aotw, .container .section-2 .section-2__classic {
+    background-size: cover;
+    background-position-y: 20%;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 4rem; }
+  .container .section-1 .new-release__type, .container .section-1 .aotw__type, .container .section-1 .classic__type, .container .section-2 .new-release__type, .container .section-2 .aotw__type, .container .section-2 .classic__type {
+    font-weight: 300;
+    color: #ffffff;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+    padding-bottom: 2rem; }
+  .container .section-1 .new-release__title, .container .section-1 .aotw__title, .container .section-1 .classic__title, .container .section-2 .new-release__title, .container .section-2 .aotw__title, .container .section-2 .classic__title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-style: italic;
+    color: #ffffff;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); }
+  .container .section-1 .new-release__description, .container .section-1 .aotw__description, .container .section-1 .classic__description, .container .section-2 .new-release__description, .container .section-2 .aotw__description, .container .section-2 .classic__description {
+    width: 50%;
+    font-weight: 400;
+    font-style: italic;
+    padding: 3rem 0;
+    color: #ffffff;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7); }
+  .container .service-items {
+    grid-area: serv;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 3em;
-    padding: 3rem;
-    margin-bottom: 3rem; }
-    .products-section .new-products .new-products__info {
+    height: 150px;
+    background-color: #eeeeee;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem; }
+    .container .service-items div p {
+      width: 20vw;
+      font-size: 2.1rem;
+      font-weight: 700;
+      font-style: italic; }
+  .container .products-section {
+    grid-area: products;
+    display: flex;
+    flex-direction: column; }
+    .container .products-section .products-section__title {
+      padding: 3rem 0;
+      border-bottom: 1px solid #eeeeee;
+      text-align: center; }
+      .container .products-section .products-section__title .products-section__title--title-name {
+        font-size: 3rem;
+        font-weight: 900;
+        color: #e1148f; }
+    .container .products-section .new-products {
       display: flex;
-      flex-direction: column;
-      text-align: start;
-      /* ----------------------------------------------
-                * Generated by Animista on 2021-11-7 3:56:5
-                * Licensed under FreeBSD License.
-                * See http://animista.net/license for more info. 
-                * w: http://animista.net, t: @cssanimista
-                * ---------------------------------------------- */
-      /**
-                * ----------------------------------------
-                * animation shadow-drop-lr
-                * ----------------------------------------
-                */ }
-      .products-section .new-products .new-products__info .new-products__cover {
-        width: 100%; }
-      .products-section .new-products .new-products__info .new-products__albumtitle {
-        font-size: 1.5rem;
-        font-weight: 800;
-        font-style: italic;
-        padding: 1rem 1rem 0.5rem 0; }
-      .products-section .new-products .new-products__info .new-products__artist {
-        font-size: 1.4rem;
-        font-weight: 500;
-        font-style: italic; }
-      .products-section .new-products .new-products__info .shadow-drop-lr {
-        -webkit-animation: shadow-drop-lr 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-        animation: shadow-drop-lr 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      gap: 3rem;
+      padding: 3rem;
+      margin-bottom: 3rem; }
+      .container .products-section .new-products .new-products__info {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        /* ----------------------------------------------
+                    * Generated by Animista on 2021-11-7 3:56:5
+                    * Licensed under FreeBSD License.
+                    * See http://animista.net/license for more info. 
+                    * w: http://animista.net, t: @cssanimista
+                    * ---------------------------------------------- */
+        /**
+                    * ----------------------------------------
+                    * animation shadow-drop-lr
+                    * ----------------------------------------
+                    */ }
+        .container .products-section .new-products .new-products__info .new-products__cover {
+          max-width: 300px; }
+        .container .products-section .new-products .new-products__info .new-products__albumtitle {
+          font-size: 1.5rem;
+          font-weight: 800;
+          font-style: italic;
+          padding: 1rem 1rem 0.5rem 0; }
+        .container .products-section .new-products .new-products__info .new-products__artist {
+          font-size: 1.4rem;
+          font-weight: 500;
+          font-style: italic; }
+        .container .products-section .new-products .new-products__info .shadow-drop-lr {
+          -webkit-animation: shadow-drop-lr 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: shadow-drop-lr 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
 @-webkit-keyframes shadow-drop-lr {
   0% {
@@ -294,108 +216,286 @@ html {
     -webkit-box-shadow: -12px 0 20px -12px rgba(0, 0, 0, 0.35), 12px 0 20px -12px rgba(0, 0, 0, 0.35);
     box-shadow: -12px 0 20px -12px rgba(0, 0, 0, 0.35), 12px 0 20px -12px rgba(0, 0, 0, 0.35); } }
 
-.main-article {
-  grid-area: main;
-  display: flex;
-  flex-direction: row;
+.catalogue-body {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 140px auto auto auto 200px;
+  grid-template-areas: "header" "promo" "notable" "classics" "footer";
   justify-content: center;
-  padding: 5rem;
-  border-bottom: 1px solid #eeeeee;
-  background-color: #eeeeee; }
-  .main-article .main-article__imgcontainer {
-    max-width: 60vw; }
-    .main-article .main-article__imgcontainer .main-article__image {
-      max-width: 100%; }
-  .main-article .main-article__info {
-    width: 40vw;
-    padding: 3rem; }
-    .main-article .main-article__info .article__type--main {
-      font-size: 1.4rem;
-      font-weight: 300;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%; }
+  .catalogue-body .promo {
+    grid-area: promo; }
+  .catalogue-body .notable {
+    grid-area: notable; }
+  .catalogue-body .classics {
+    grid-area: classics; }
+  .catalogue-body .promo .promo__section-title, .catalogue-body .promo .notable__section-title, .catalogue-body .promo .classics__section-title, .catalogue-body .notable .promo__section-title, .catalogue-body .notable .notable__section-title, .catalogue-body .notable .classics__section-title, .catalogue-body .classics .promo__section-title, .catalogue-body .classics .notable__section-title, .catalogue-body .classics .classics__section-title {
+    border-bottom: 1px solid #eeeeee; }
+    .catalogue-body .promo .promo__section-title .promo__section-title--h2, .catalogue-body .promo .promo__section-title .notable__section-title--h2, .catalogue-body .promo .promo__section-title .classics__section-title--h2, .catalogue-body .promo .notable__section-title .promo__section-title--h2, .catalogue-body .promo .notable__section-title .notable__section-title--h2, .catalogue-body .promo .notable__section-title .classics__section-title--h2, .catalogue-body .promo .classics__section-title .promo__section-title--h2, .catalogue-body .promo .classics__section-title .notable__section-title--h2, .catalogue-body .promo .classics__section-title .classics__section-title--h2, .catalogue-body .notable .promo__section-title .promo__section-title--h2, .catalogue-body .notable .promo__section-title .notable__section-title--h2, .catalogue-body .notable .promo__section-title .classics__section-title--h2, .catalogue-body .notable .notable__section-title .promo__section-title--h2, .catalogue-body .notable .notable__section-title .notable__section-title--h2, .catalogue-body .notable .notable__section-title .classics__section-title--h2, .catalogue-body .notable .classics__section-title .promo__section-title--h2, .catalogue-body .notable .classics__section-title .notable__section-title--h2, .catalogue-body .notable .classics__section-title .classics__section-title--h2, .catalogue-body .classics .promo__section-title .promo__section-title--h2, .catalogue-body .classics .promo__section-title .notable__section-title--h2, .catalogue-body .classics .promo__section-title .classics__section-title--h2, .catalogue-body .classics .notable__section-title .promo__section-title--h2, .catalogue-body .classics .notable__section-title .notable__section-title--h2, .catalogue-body .classics .notable__section-title .classics__section-title--h2, .catalogue-body .classics .classics__section-title .promo__section-title--h2, .catalogue-body .classics .classics__section-title .notable__section-title--h2, .catalogue-body .classics .classics__section-title .classics__section-title--h2 {
+      text-align: center;
+      font-size: 3rem;
+      font-weight: 900;
       font-style: italic;
-      border-bottom: 1px solid #e1148f;
-      padding-bottom: 1rem; }
-    .main-article .main-article__info .article__title--main {
-      padding-top: 2rem; }
-      .main-article .main-article__info .article__title--main a {
-        font-size: 2.3vw;
-        font-weight: 700;
-        font-style: italic;
-        text-decoration: none;
-        color: #e1148f; }
-    .main-article .main-article__info .article__description--main {
-      padding-top: 2rem;
-      font-size: 1.8rem;
-      font-weight: 400; }
-
-.sec-news {
-  grid-area: articles;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 5rem 0; }
-  .sec-news .sec-news__article {
-    display: flex;
-    flex-direction: column;
-    max-width: 25vw; }
-    .sec-news .sec-news__article .sec-news__imgcontainer {
-      max-height: 250px;
-      overflow: hidden; }
-      .sec-news .sec-news__article .sec-news__imgcontainer .sec-news__imgcontainer--img {
-        width: 100%;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        -webkit-transition: .3s ease-in-out;
-        transition: .3s ease-in-out; }
-      .sec-news .sec-news__article .sec-news__imgcontainer .sec-news__imgcontainer--img:hover {
-        -webkit-transform: scale(1.05);
-        transform: scale(1.05); }
-    .sec-news .sec-news__article .sec-news__info .article__type--sec {
-      font-size: 1.4rem;
-      font-weight: 300;
-      font-style: italic;
-      padding: 1rem 0; }
-    .sec-news .sec-news__article .sec-news__info .article__title--sec {
-      max-height: 10rem;
-      overflow: hidden; }
-      .sec-news .sec-news__article .sec-news__info .article__title--sec a {
-        font-size: 1.8rem;
-        font-weight: 700;
-        font-style: italic;
-        text-decoration: none;
-        color: #000000; }
-    .sec-news .sec-news__article .sec-news__info .article__description--sec {
-      font-weight: 300;
-      padding-top: 1rem; }
-
-.other-news {
-  grid-area: ac;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  padding: 3rem;
-  border-top: 1px solid #e1148f;
-  align-items: center; }
-  .other-news .other-news__article {
+      padding: 3rem 0; }
+  .catalogue-body .promo .promo__content, .catalogue-body .promo .notable__content, .catalogue-body .promo .classics__content, .catalogue-body .notable .promo__content, .catalogue-body .notable .notable__content, .catalogue-body .notable .classics__content, .catalogue-body .classics .promo__content, .catalogue-body .classics .notable__content, .catalogue-body .classics .classics__content {
     display: flex;
     flex-direction: row;
-    width: 70vw; }
-    .other-news .other-news__article .other-news__imgcontainer {
-      height: 20vh; }
-      .other-news .other-news__article .other-news__imgcontainer .other-news__imgcontainer--img {
-        height: 100%; }
-    .other-news .other-news__article .other-news__info {
-      padding: 0 3rem; }
-      .other-news .other-news__article .other-news__info .other-news__info--type {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem; }
+    .catalogue-body .promo .promo__content .promo__album, .catalogue-body .promo .promo__content .notable__album, .catalogue-body .promo .promo__content .classics__album, .catalogue-body .promo .notable__content .promo__album, .catalogue-body .promo .notable__content .notable__album, .catalogue-body .promo .notable__content .classics__album, .catalogue-body .promo .classics__content .promo__album, .catalogue-body .promo .classics__content .notable__album, .catalogue-body .promo .classics__content .classics__album, .catalogue-body .notable .promo__content .promo__album, .catalogue-body .notable .promo__content .notable__album, .catalogue-body .notable .promo__content .classics__album, .catalogue-body .notable .notable__content .promo__album, .catalogue-body .notable .notable__content .notable__album, .catalogue-body .notable .notable__content .classics__album, .catalogue-body .notable .classics__content .promo__album, .catalogue-body .notable .classics__content .notable__album, .catalogue-body .notable .classics__content .classics__album, .catalogue-body .classics .promo__content .promo__album, .catalogue-body .classics .promo__content .notable__album, .catalogue-body .classics .promo__content .classics__album, .catalogue-body .classics .notable__content .promo__album, .catalogue-body .classics .notable__content .notable__album, .catalogue-body .classics .notable__content .classics__album, .catalogue-body .classics .classics__content .promo__album, .catalogue-body .classics .classics__content .notable__album, .catalogue-body .classics .classics__content .classics__album {
+      display: flex;
+      flex-direction: column; }
+      .catalogue-body .promo .promo__content .promo__album .album-cover, .catalogue-body .promo .promo__content .notable__album .album-cover, .catalogue-body .promo .promo__content .classics__album .album-cover, .catalogue-body .promo .notable__content .promo__album .album-cover, .catalogue-body .promo .notable__content .notable__album .album-cover, .catalogue-body .promo .notable__content .classics__album .album-cover, .catalogue-body .promo .classics__content .promo__album .album-cover, .catalogue-body .promo .classics__content .notable__album .album-cover, .catalogue-body .promo .classics__content .classics__album .album-cover, .catalogue-body .notable .promo__content .promo__album .album-cover, .catalogue-body .notable .promo__content .notable__album .album-cover, .catalogue-body .notable .promo__content .classics__album .album-cover, .catalogue-body .notable .notable__content .promo__album .album-cover, .catalogue-body .notable .notable__content .notable__album .album-cover, .catalogue-body .notable .notable__content .classics__album .album-cover, .catalogue-body .notable .classics__content .promo__album .album-cover, .catalogue-body .notable .classics__content .notable__album .album-cover, .catalogue-body .notable .classics__content .classics__album .album-cover, .catalogue-body .classics .promo__content .promo__album .album-cover, .catalogue-body .classics .promo__content .notable__album .album-cover, .catalogue-body .classics .promo__content .classics__album .album-cover, .catalogue-body .classics .notable__content .promo__album .album-cover, .catalogue-body .classics .notable__content .notable__album .album-cover, .catalogue-body .classics .notable__content .classics__album .album-cover, .catalogue-body .classics .classics__content .promo__album .album-cover, .catalogue-body .classics .classics__content .notable__album .album-cover, .catalogue-body .classics .classics__content .classics__album .album-cover {
+        width: 250px;
+        height: 250px;
+        overflow: hidden; }
+        .catalogue-body .promo .promo__content .promo__album .album-cover .promo__album--img, .catalogue-body .promo .promo__content .promo__album .album-cover .notable__album--img, .catalogue-body .promo .promo__content .promo__album .album-cover .classics__album--img, .catalogue-body .promo .promo__content .notable__album .album-cover .promo__album--img, .catalogue-body .promo .promo__content .notable__album .album-cover .notable__album--img, .catalogue-body .promo .promo__content .notable__album .album-cover .classics__album--img, .catalogue-body .promo .promo__content .classics__album .album-cover .promo__album--img, .catalogue-body .promo .promo__content .classics__album .album-cover .notable__album--img, .catalogue-body .promo .promo__content .classics__album .album-cover .classics__album--img, .catalogue-body .promo .notable__content .promo__album .album-cover .promo__album--img, .catalogue-body .promo .notable__content .promo__album .album-cover .notable__album--img, .catalogue-body .promo .notable__content .promo__album .album-cover .classics__album--img, .catalogue-body .promo .notable__content .notable__album .album-cover .promo__album--img, .catalogue-body .promo .notable__content .notable__album .album-cover .notable__album--img, .catalogue-body .promo .notable__content .notable__album .album-cover .classics__album--img, .catalogue-body .promo .notable__content .classics__album .album-cover .promo__album--img, .catalogue-body .promo .notable__content .classics__album .album-cover .notable__album--img, .catalogue-body .promo .notable__content .classics__album .album-cover .classics__album--img, .catalogue-body .promo .classics__content .promo__album .album-cover .promo__album--img, .catalogue-body .promo .classics__content .promo__album .album-cover .notable__album--img, .catalogue-body .promo .classics__content .promo__album .album-cover .classics__album--img, .catalogue-body .promo .classics__content .notable__album .album-cover .promo__album--img, .catalogue-body .promo .classics__content .notable__album .album-cover .notable__album--img, .catalogue-body .promo .classics__content .notable__album .album-cover .classics__album--img, .catalogue-body .promo .classics__content .classics__album .album-cover .promo__album--img, .catalogue-body .promo .classics__content .classics__album .album-cover .notable__album--img, .catalogue-body .promo .classics__content .classics__album .album-cover .classics__album--img, .catalogue-body .notable .promo__content .promo__album .album-cover .promo__album--img, .catalogue-body .notable .promo__content .promo__album .album-cover .notable__album--img, .catalogue-body .notable .promo__content .promo__album .album-cover .classics__album--img, .catalogue-body .notable .promo__content .notable__album .album-cover .promo__album--img, .catalogue-body .notable .promo__content .notable__album .album-cover .notable__album--img, .catalogue-body .notable .promo__content .notable__album .album-cover .classics__album--img, .catalogue-body .notable .promo__content .classics__album .album-cover .promo__album--img, .catalogue-body .notable .promo__content .classics__album .album-cover .notable__album--img, .catalogue-body .notable .promo__content .classics__album .album-cover .classics__album--img, .catalogue-body .notable .notable__content .promo__album .album-cover .promo__album--img, .catalogue-body .notable .notable__content .promo__album .album-cover .notable__album--img, .catalogue-body .notable .notable__content .promo__album .album-cover .classics__album--img, .catalogue-body .notable .notable__content .notable__album .album-cover .promo__album--img, .catalogue-body .notable .notable__content .notable__album .album-cover .notable__album--img, .catalogue-body .notable .notable__content .notable__album .album-cover .classics__album--img, .catalogue-body .notable .notable__content .classics__album .album-cover .promo__album--img, .catalogue-body .notable .notable__content .classics__album .album-cover .notable__album--img, .catalogue-body .notable .notable__content .classics__album .album-cover .classics__album--img, .catalogue-body .notable .classics__content .promo__album .album-cover .promo__album--img, .catalogue-body .notable .classics__content .promo__album .album-cover .notable__album--img, .catalogue-body .notable .classics__content .promo__album .album-cover .classics__album--img, .catalogue-body .notable .classics__content .notable__album .album-cover .promo__album--img, .catalogue-body .notable .classics__content .notable__album .album-cover .notable__album--img, .catalogue-body .notable .classics__content .notable__album .album-cover .classics__album--img, .catalogue-body .notable .classics__content .classics__album .album-cover .promo__album--img, .catalogue-body .notable .classics__content .classics__album .album-cover .notable__album--img, .catalogue-body .notable .classics__content .classics__album .album-cover .classics__album--img, .catalogue-body .classics .promo__content .promo__album .album-cover .promo__album--img, .catalogue-body .classics .promo__content .promo__album .album-cover .notable__album--img, .catalogue-body .classics .promo__content .promo__album .album-cover .classics__album--img, .catalogue-body .classics .promo__content .notable__album .album-cover .promo__album--img, .catalogue-body .classics .promo__content .notable__album .album-cover .notable__album--img, .catalogue-body .classics .promo__content .notable__album .album-cover .classics__album--img, .catalogue-body .classics .promo__content .classics__album .album-cover .promo__album--img, .catalogue-body .classics .promo__content .classics__album .album-cover .notable__album--img, .catalogue-body .classics .promo__content .classics__album .album-cover .classics__album--img, .catalogue-body .classics .notable__content .promo__album .album-cover .promo__album--img, .catalogue-body .classics .notable__content .promo__album .album-cover .notable__album--img, .catalogue-body .classics .notable__content .promo__album .album-cover .classics__album--img, .catalogue-body .classics .notable__content .notable__album .album-cover .promo__album--img, .catalogue-body .classics .notable__content .notable__album .album-cover .notable__album--img, .catalogue-body .classics .notable__content .notable__album .album-cover .classics__album--img, .catalogue-body .classics .notable__content .classics__album .album-cover .promo__album--img, .catalogue-body .classics .notable__content .classics__album .album-cover .notable__album--img, .catalogue-body .classics .notable__content .classics__album .album-cover .classics__album--img, .catalogue-body .classics .classics__content .promo__album .album-cover .promo__album--img, .catalogue-body .classics .classics__content .promo__album .album-cover .notable__album--img, .catalogue-body .classics .classics__content .promo__album .album-cover .classics__album--img, .catalogue-body .classics .classics__content .notable__album .album-cover .promo__album--img, .catalogue-body .classics .classics__content .notable__album .album-cover .notable__album--img, .catalogue-body .classics .classics__content .notable__album .album-cover .classics__album--img, .catalogue-body .classics .classics__content .classics__album .album-cover .promo__album--img, .catalogue-body .classics .classics__content .classics__album .album-cover .notable__album--img, .catalogue-body .classics .classics__content .classics__album .album-cover .classics__album--img {
+          max-width: 100%;
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          -webkit-transition: .3s ease-in-out;
+          transition: .3s ease-in-out; }
+          .catalogue-body .promo .promo__content .promo__album .album-cover .promo__album--img:hover, .catalogue-body .promo .promo__content .promo__album .album-cover .notable__album--img:hover, .catalogue-body .promo .promo__content .promo__album .album-cover .classics__album--img:hover, .catalogue-body .promo .promo__content .notable__album .album-cover .promo__album--img:hover, .catalogue-body .promo .promo__content .notable__album .album-cover .notable__album--img:hover, .catalogue-body .promo .promo__content .notable__album .album-cover .classics__album--img:hover, .catalogue-body .promo .promo__content .classics__album .album-cover .promo__album--img:hover, .catalogue-body .promo .promo__content .classics__album .album-cover .notable__album--img:hover, .catalogue-body .promo .promo__content .classics__album .album-cover .classics__album--img:hover, .catalogue-body .promo .notable__content .promo__album .album-cover .promo__album--img:hover, .catalogue-body .promo .notable__content .promo__album .album-cover .notable__album--img:hover, .catalogue-body .promo .notable__content .promo__album .album-cover .classics__album--img:hover, .catalogue-body .promo .notable__content .notable__album .album-cover .promo__album--img:hover, .catalogue-body .promo .notable__content .notable__album .album-cover .notable__album--img:hover, .catalogue-body .promo .notable__content .notable__album .album-cover .classics__album--img:hover, .catalogue-body .promo .notable__content .classics__album .album-cover .promo__album--img:hover, .catalogue-body .promo .notable__content .classics__album .album-cover .notable__album--img:hover, .catalogue-body .promo .notable__content .classics__album .album-cover .classics__album--img:hover, .catalogue-body .promo .classics__content .promo__album .album-cover .promo__album--img:hover, .catalogue-body .promo .classics__content .promo__album .album-cover .notable__album--img:hover, .catalogue-body .promo .classics__content .promo__album .album-cover .classics__album--img:hover, .catalogue-body .promo .classics__content .notable__album .album-cover .promo__album--img:hover, .catalogue-body .promo .classics__content .notable__album .album-cover .notable__album--img:hover, .catalogue-body .promo .classics__content .notable__album .album-cover .classics__album--img:hover, .catalogue-body .promo .classics__content .classics__album .album-cover .promo__album--img:hover, .catalogue-body .promo .classics__content .classics__album .album-cover .notable__album--img:hover, .catalogue-body .promo .classics__content .classics__album .album-cover .classics__album--img:hover, .catalogue-body .notable .promo__content .promo__album .album-cover .promo__album--img:hover, .catalogue-body .notable .promo__content .promo__album .album-cover .notable__album--img:hover, .catalogue-body .notable .promo__content .promo__album .album-cover .classics__album--img:hover, .catalogue-body .notable .promo__content .notable__album .album-cover .promo__album--img:hover, .catalogue-body .notable .promo__content .notable__album .album-cover .notable__album--img:hover, .catalogue-body .notable .promo__content .notable__album .album-cover .classics__album--img:hover, .catalogue-body .notable .promo__content .classics__album .album-cover .promo__album--img:hover, .catalogue-body .notable .promo__content .classics__album .album-cover .notable__album--img:hover, .catalogue-body .notable .promo__content .classics__album .album-cover .classics__album--img:hover, .catalogue-body .notable .notable__content .promo__album .album-cover .promo__album--img:hover, .catalogue-body .notable .notable__content .promo__album .album-cover .notable__album--img:hover, .catalogue-body .notable .notable__content .promo__album .album-cover .classics__album--img:hover, .catalogue-body .notable .notable__content .notable__album .album-cover .promo__album--img:hover, .catalogue-body .notable .notable__content .notable__album .album-cover .notable__album--img:hover, .catalogue-body .notable .notable__content .notable__album .album-cover .classics__album--img:hover, .catalogue-body .notable .notable__content .classics__album .album-cover .promo__album--img:hover, .catalogue-body .notable .notable__content .classics__album .album-cover .notable__album--img:hover, .catalogue-body .notable .notable__content .classics__album .album-cover .classics__album--img:hover, .catalogue-body .notable .classics__content .promo__album .album-cover .promo__album--img:hover, .catalogue-body .notable .classics__content .promo__album .album-cover .notable__album--img:hover, .catalogue-body .notable .classics__content .promo__album .album-cover .classics__album--img:hover, .catalogue-body .notable .classics__content .notable__album .album-cover .promo__album--img:hover, .catalogue-body .notable .classics__content .notable__album .album-cover .notable__album--img:hover, .catalogue-body .notable .classics__content .notable__album .album-cover .classics__album--img:hover, .catalogue-body .notable .classics__content .classics__album .album-cover .promo__album--img:hover, .catalogue-body .notable .classics__content .classics__album .album-cover .notable__album--img:hover, .catalogue-body .notable .classics__content .classics__album .album-cover .classics__album--img:hover, .catalogue-body .classics .promo__content .promo__album .album-cover .promo__album--img:hover, .catalogue-body .classics .promo__content .promo__album .album-cover .notable__album--img:hover, .catalogue-body .classics .promo__content .promo__album .album-cover .classics__album--img:hover, .catalogue-body .classics .promo__content .notable__album .album-cover .promo__album--img:hover, .catalogue-body .classics .promo__content .notable__album .album-cover .notable__album--img:hover, .catalogue-body .classics .promo__content .notable__album .album-cover .classics__album--img:hover, .catalogue-body .classics .promo__content .classics__album .album-cover .promo__album--img:hover, .catalogue-body .classics .promo__content .classics__album .album-cover .notable__album--img:hover, .catalogue-body .classics .promo__content .classics__album .album-cover .classics__album--img:hover, .catalogue-body .classics .notable__content .promo__album .album-cover .promo__album--img:hover, .catalogue-body .classics .notable__content .promo__album .album-cover .notable__album--img:hover, .catalogue-body .classics .notable__content .promo__album .album-cover .classics__album--img:hover, .catalogue-body .classics .notable__content .notable__album .album-cover .promo__album--img:hover, .catalogue-body .classics .notable__content .notable__album .album-cover .notable__album--img:hover, .catalogue-body .classics .notable__content .notable__album .album-cover .classics__album--img:hover, .catalogue-body .classics .notable__content .classics__album .album-cover .promo__album--img:hover, .catalogue-body .classics .notable__content .classics__album .album-cover .notable__album--img:hover, .catalogue-body .classics .notable__content .classics__album .album-cover .classics__album--img:hover, .catalogue-body .classics .classics__content .promo__album .album-cover .promo__album--img:hover, .catalogue-body .classics .classics__content .promo__album .album-cover .notable__album--img:hover, .catalogue-body .classics .classics__content .promo__album .album-cover .classics__album--img:hover, .catalogue-body .classics .classics__content .notable__album .album-cover .promo__album--img:hover, .catalogue-body .classics .classics__content .notable__album .album-cover .notable__album--img:hover, .catalogue-body .classics .classics__content .notable__album .album-cover .classics__album--img:hover, .catalogue-body .classics .classics__content .classics__album .album-cover .promo__album--img:hover, .catalogue-body .classics .classics__content .classics__album .album-cover .notable__album--img:hover, .catalogue-body .classics .classics__content .classics__album .album-cover .classics__album--img:hover {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05); }
+      .catalogue-body .promo .promo__content .promo__album .album__description, .catalogue-body .promo .promo__content .notable__album .album__description, .catalogue-body .promo .promo__content .classics__album .album__description, .catalogue-body .promo .notable__content .promo__album .album__description, .catalogue-body .promo .notable__content .notable__album .album__description, .catalogue-body .promo .notable__content .classics__album .album__description, .catalogue-body .promo .classics__content .promo__album .album__description, .catalogue-body .promo .classics__content .notable__album .album__description, .catalogue-body .promo .classics__content .classics__album .album__description, .catalogue-body .notable .promo__content .promo__album .album__description, .catalogue-body .notable .promo__content .notable__album .album__description, .catalogue-body .notable .promo__content .classics__album .album__description, .catalogue-body .notable .notable__content .promo__album .album__description, .catalogue-body .notable .notable__content .notable__album .album__description, .catalogue-body .notable .notable__content .classics__album .album__description, .catalogue-body .notable .classics__content .promo__album .album__description, .catalogue-body .notable .classics__content .notable__album .album__description, .catalogue-body .notable .classics__content .classics__album .album__description, .catalogue-body .classics .promo__content .promo__album .album__description, .catalogue-body .classics .promo__content .notable__album .album__description, .catalogue-body .classics .promo__content .classics__album .album__description, .catalogue-body .classics .notable__content .promo__album .album__description, .catalogue-body .classics .notable__content .notable__album .album__description, .catalogue-body .classics .notable__content .classics__album .album__description, .catalogue-body .classics .classics__content .promo__album .album__description, .catalogue-body .classics .classics__content .notable__album .album__description, .catalogue-body .classics .classics__content .classics__album .album__description {
+        height: 9rem;
+        width: 250px;
+        overflow: hidden; }
+        .catalogue-body .promo .promo__content .promo__album .album__description h3, .catalogue-body .promo .promo__content .notable__album .album__description h3, .catalogue-body .promo .promo__content .classics__album .album__description h3, .catalogue-body .promo .notable__content .promo__album .album__description h3, .catalogue-body .promo .notable__content .notable__album .album__description h3, .catalogue-body .promo .notable__content .classics__album .album__description h3, .catalogue-body .promo .classics__content .promo__album .album__description h3, .catalogue-body .promo .classics__content .notable__album .album__description h3, .catalogue-body .promo .classics__content .classics__album .album__description h3, .catalogue-body .notable .promo__content .promo__album .album__description h3, .catalogue-body .notable .promo__content .notable__album .album__description h3, .catalogue-body .notable .promo__content .classics__album .album__description h3, .catalogue-body .notable .notable__content .promo__album .album__description h3, .catalogue-body .notable .notable__content .notable__album .album__description h3, .catalogue-body .notable .notable__content .classics__album .album__description h3, .catalogue-body .notable .classics__content .promo__album .album__description h3, .catalogue-body .notable .classics__content .notable__album .album__description h3, .catalogue-body .notable .classics__content .classics__album .album__description h3, .catalogue-body .classics .promo__content .promo__album .album__description h3, .catalogue-body .classics .promo__content .notable__album .album__description h3, .catalogue-body .classics .promo__content .classics__album .album__description h3, .catalogue-body .classics .notable__content .promo__album .album__description h3, .catalogue-body .classics .notable__content .notable__album .album__description h3, .catalogue-body .classics .notable__content .classics__album .album__description h3, .catalogue-body .classics .classics__content .promo__album .album__description h3, .catalogue-body .classics .classics__content .notable__album .album__description h3, .catalogue-body .classics .classics__content .classics__album .album__description h3 {
+          font-style: italic;
+          padding: 1rem 1rem 0.5rem 0; }
+          .catalogue-body .promo .promo__content .promo__album .album__description h3 a, .catalogue-body .promo .promo__content .notable__album .album__description h3 a, .catalogue-body .promo .promo__content .classics__album .album__description h3 a, .catalogue-body .promo .notable__content .promo__album .album__description h3 a, .catalogue-body .promo .notable__content .notable__album .album__description h3 a, .catalogue-body .promo .notable__content .classics__album .album__description h3 a, .catalogue-body .promo .classics__content .promo__album .album__description h3 a, .catalogue-body .promo .classics__content .notable__album .album__description h3 a, .catalogue-body .promo .classics__content .classics__album .album__description h3 a, .catalogue-body .notable .promo__content .promo__album .album__description h3 a, .catalogue-body .notable .promo__content .notable__album .album__description h3 a, .catalogue-body .notable .promo__content .classics__album .album__description h3 a, .catalogue-body .notable .notable__content .promo__album .album__description h3 a, .catalogue-body .notable .notable__content .notable__album .album__description h3 a, .catalogue-body .notable .notable__content .classics__album .album__description h3 a, .catalogue-body .notable .classics__content .promo__album .album__description h3 a, .catalogue-body .notable .classics__content .notable__album .album__description h3 a, .catalogue-body .notable .classics__content .classics__album .album__description h3 a, .catalogue-body .classics .promo__content .promo__album .album__description h3 a, .catalogue-body .classics .promo__content .notable__album .album__description h3 a, .catalogue-body .classics .promo__content .classics__album .album__description h3 a, .catalogue-body .classics .notable__content .promo__album .album__description h3 a, .catalogue-body .classics .notable__content .notable__album .album__description h3 a, .catalogue-body .classics .notable__content .classics__album .album__description h3 a, .catalogue-body .classics .classics__content .promo__album .album__description h3 a, .catalogue-body .classics .classics__content .notable__album .album__description h3 a, .catalogue-body .classics .classics__content .classics__album .album__description h3 a {
+            text-decoration: none;
+            color: #000000; }
+        .catalogue-body .promo .promo__content .promo__album .album__description p, .catalogue-body .promo .promo__content .notable__album .album__description p, .catalogue-body .promo .promo__content .classics__album .album__description p, .catalogue-body .promo .notable__content .promo__album .album__description p, .catalogue-body .promo .notable__content .notable__album .album__description p, .catalogue-body .promo .notable__content .classics__album .album__description p, .catalogue-body .promo .classics__content .promo__album .album__description p, .catalogue-body .promo .classics__content .notable__album .album__description p, .catalogue-body .promo .classics__content .classics__album .album__description p, .catalogue-body .notable .promo__content .promo__album .album__description p, .catalogue-body .notable .promo__content .notable__album .album__description p, .catalogue-body .notable .promo__content .classics__album .album__description p, .catalogue-body .notable .notable__content .promo__album .album__description p, .catalogue-body .notable .notable__content .notable__album .album__description p, .catalogue-body .notable .notable__content .classics__album .album__description p, .catalogue-body .notable .classics__content .promo__album .album__description p, .catalogue-body .notable .classics__content .notable__album .album__description p, .catalogue-body .notable .classics__content .classics__album .album__description p, .catalogue-body .classics .promo__content .promo__album .album__description p, .catalogue-body .classics .promo__content .notable__album .album__description p, .catalogue-body .classics .promo__content .classics__album .album__description p, .catalogue-body .classics .notable__content .promo__album .album__description p, .catalogue-body .classics .notable__content .notable__album .album__description p, .catalogue-body .classics .notable__content .classics__album .album__description p, .catalogue-body .classics .classics__content .promo__album .album__description p, .catalogue-body .classics .classics__content .notable__album .album__description p, .catalogue-body .classics .classics__content .classics__album .album__description p {
+          font-size: 1.2rem;
+          padding: 0 0.5rem 0.5rem 0; }
+
+.recs-body {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 140px auto 200px;
+  grid-template-areas: "header" "recs" "footer";
+  width: 100%;
+  height: 100%; }
+  .recs-body .AOTW-section {
+    grid-area: recs;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .recs-body .AOTW-section .AOTW-section__title .AOTW-section__title--h2 {
+      font-size: 3rem;
+      font-weight: 900;
+      font-style: italic;
+      padding: 3rem;
+      border-bottom: 1px solid #e1148f; }
+    .recs-body .AOTW-section .recs-section {
+      display: flex;
+      flex-direction: column;
+      width: 80vw;
+      margin: 2rem 0; }
+      .recs-body .AOTW-section .recs-section .rec-album {
+        display: flex;
+        flex-direction: row;
+        border-top: 1px solid #eeeeee;
+        padding: 3rem 0; }
+        .recs-body .AOTW-section .recs-section .rec-album .rec-album__cover {
+          width: 50%; }
+          .recs-body .AOTW-section .recs-section .rec-album .rec-album__cover .rec-album__cover--img {
+            width: 100%; }
+        .recs-body .AOTW-section .recs-section .rec-album .rec-album__info {
+          width: 50%;
+          padding: 2rem 3rem;
+          box-sizing: border-box;
+          margin: 0 3rem;
+          border-left: 1px solid #eeeeee; }
+          .recs-body .AOTW-section .recs-section .rec-album .rec-album__info .rec-album__info--name {
+            font-size: 3rem;
+            font-weight: 900;
+            font-style: italic;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e1148f; }
+          .recs-body .AOTW-section .recs-section .rec-album .rec-album__info .rec-album__table {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 2rem 0; }
+            .recs-body .AOTW-section .recs-section .rec-album .rec-album__info .rec-album__table .rec-album__table--info {
+              font-weight: 800; }
+            .recs-body .AOTW-section .recs-section .rec-album .rec-album__info .rec-album__table span {
+              padding: 0.3rem; }
+          .recs-body .AOTW-section .recs-section .rec-album .rec-album__info .rec-album__info--description {
+            font-weight: 500;
+            font-style: italic;
+            padding: 2rem 0;
+            border-top: 1px solid #eeeeee;
+            line-height: 2.5rem; }
+
+.merch-body {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 140px auto 200px;
+  grid-template-areas: "header" "main" "footer";
+  width: 100%;
+  height: 100%; }
+  .merch-body .afx, .merch-body .merch {
+    display: flex;
+    flex-direction: column; }
+    .merch-body .afx .afx__title, .merch-body .afx .merch__title, .merch-body .merch .afx__title, .merch-body .merch .merch__title {
+      border-bottom: 1px solid #eeeeee; }
+      .merch-body .afx .afx__title .afx__title--h2, .merch-body .afx .afx__title .merch__title--h2, .merch-body .afx .merch__title .afx__title--h2, .merch-body .afx .merch__title .merch__title--h2, .merch-body .merch .afx__title .afx__title--h2, .merch-body .merch .afx__title .merch__title--h2, .merch-body .merch .merch__title .afx__title--h2, .merch-body .merch .merch__title .merch__title--h2 {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 900;
+        font-style: italic;
+        padding: 3rem 0; }
+    .merch-body .afx .afx__merch, .merch-body .afx .music__merch, .merch-body .merch .afx__merch, .merch-body .merch .music__merch {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 3rem;
+      padding: 3rem; }
+      .merch-body .afx .afx__merch .afx__item, .merch-body .afx .afx__merch .music__item, .merch-body .afx .music__merch .afx__item, .merch-body .afx .music__merch .music__item, .merch-body .merch .afx__merch .afx__item, .merch-body .merch .afx__merch .music__item, .merch-body .merch .music__merch .afx__item, .merch-body .merch .music__merch .music__item {
+        display: flex;
+        flex-direction: column; }
+        .merch-body .afx .afx__merch .afx__item .afx__item_ph, .merch-body .afx .afx__merch .afx__item .music__item_ph, .merch-body .afx .afx__merch .music__item .afx__item_ph, .merch-body .afx .afx__merch .music__item .music__item_ph, .merch-body .afx .music__merch .afx__item .afx__item_ph, .merch-body .afx .music__merch .afx__item .music__item_ph, .merch-body .afx .music__merch .music__item .afx__item_ph, .merch-body .afx .music__merch .music__item .music__item_ph, .merch-body .merch .afx__merch .afx__item .afx__item_ph, .merch-body .merch .afx__merch .afx__item .music__item_ph, .merch-body .merch .afx__merch .music__item .afx__item_ph, .merch-body .merch .afx__merch .music__item .music__item_ph, .merch-body .merch .music__merch .afx__item .afx__item_ph, .merch-body .merch .music__merch .afx__item .music__item_ph, .merch-body .merch .music__merch .music__item .afx__item_ph, .merch-body .merch .music__merch .music__item .music__item_ph {
+          width: 360px;
+          height: 360px;
+          overflow: hidden; }
+          .merch-body .afx .afx__merch .afx__item .afx__item_ph .afx__item_ph--img, .merch-body .afx .afx__merch .afx__item .afx__item_ph .music__item_ph--img, .merch-body .afx .afx__merch .afx__item .music__item_ph .afx__item_ph--img, .merch-body .afx .afx__merch .afx__item .music__item_ph .music__item_ph--img, .merch-body .afx .afx__merch .music__item .afx__item_ph .afx__item_ph--img, .merch-body .afx .afx__merch .music__item .afx__item_ph .music__item_ph--img, .merch-body .afx .afx__merch .music__item .music__item_ph .afx__item_ph--img, .merch-body .afx .afx__merch .music__item .music__item_ph .music__item_ph--img, .merch-body .afx .music__merch .afx__item .afx__item_ph .afx__item_ph--img, .merch-body .afx .music__merch .afx__item .afx__item_ph .music__item_ph--img, .merch-body .afx .music__merch .afx__item .music__item_ph .afx__item_ph--img, .merch-body .afx .music__merch .afx__item .music__item_ph .music__item_ph--img, .merch-body .afx .music__merch .music__item .afx__item_ph .afx__item_ph--img, .merch-body .afx .music__merch .music__item .afx__item_ph .music__item_ph--img, .merch-body .afx .music__merch .music__item .music__item_ph .afx__item_ph--img, .merch-body .afx .music__merch .music__item .music__item_ph .music__item_ph--img, .merch-body .merch .afx__merch .afx__item .afx__item_ph .afx__item_ph--img, .merch-body .merch .afx__merch .afx__item .afx__item_ph .music__item_ph--img, .merch-body .merch .afx__merch .afx__item .music__item_ph .afx__item_ph--img, .merch-body .merch .afx__merch .afx__item .music__item_ph .music__item_ph--img, .merch-body .merch .afx__merch .music__item .afx__item_ph .afx__item_ph--img, .merch-body .merch .afx__merch .music__item .afx__item_ph .music__item_ph--img, .merch-body .merch .afx__merch .music__item .music__item_ph .afx__item_ph--img, .merch-body .merch .afx__merch .music__item .music__item_ph .music__item_ph--img, .merch-body .merch .music__merch .afx__item .afx__item_ph .afx__item_ph--img, .merch-body .merch .music__merch .afx__item .afx__item_ph .music__item_ph--img, .merch-body .merch .music__merch .afx__item .music__item_ph .afx__item_ph--img, .merch-body .merch .music__merch .afx__item .music__item_ph .music__item_ph--img, .merch-body .merch .music__merch .music__item .afx__item_ph .afx__item_ph--img, .merch-body .merch .music__merch .music__item .afx__item_ph .music__item_ph--img, .merch-body .merch .music__merch .music__item .music__item_ph .afx__item_ph--img, .merch-body .merch .music__merch .music__item .music__item_ph .music__item_ph--img {
+            width: 100%;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out; }
+            .merch-body .afx .afx__merch .afx__item .afx__item_ph .afx__item_ph--img:hover, .merch-body .afx .afx__merch .afx__item .afx__item_ph .music__item_ph--img:hover, .merch-body .afx .afx__merch .afx__item .music__item_ph .afx__item_ph--img:hover, .merch-body .afx .afx__merch .afx__item .music__item_ph .music__item_ph--img:hover, .merch-body .afx .afx__merch .music__item .afx__item_ph .afx__item_ph--img:hover, .merch-body .afx .afx__merch .music__item .afx__item_ph .music__item_ph--img:hover, .merch-body .afx .afx__merch .music__item .music__item_ph .afx__item_ph--img:hover, .merch-body .afx .afx__merch .music__item .music__item_ph .music__item_ph--img:hover, .merch-body .afx .music__merch .afx__item .afx__item_ph .afx__item_ph--img:hover, .merch-body .afx .music__merch .afx__item .afx__item_ph .music__item_ph--img:hover, .merch-body .afx .music__merch .afx__item .music__item_ph .afx__item_ph--img:hover, .merch-body .afx .music__merch .afx__item .music__item_ph .music__item_ph--img:hover, .merch-body .afx .music__merch .music__item .afx__item_ph .afx__item_ph--img:hover, .merch-body .afx .music__merch .music__item .afx__item_ph .music__item_ph--img:hover, .merch-body .afx .music__merch .music__item .music__item_ph .afx__item_ph--img:hover, .merch-body .afx .music__merch .music__item .music__item_ph .music__item_ph--img:hover, .merch-body .merch .afx__merch .afx__item .afx__item_ph .afx__item_ph--img:hover, .merch-body .merch .afx__merch .afx__item .afx__item_ph .music__item_ph--img:hover, .merch-body .merch .afx__merch .afx__item .music__item_ph .afx__item_ph--img:hover, .merch-body .merch .afx__merch .afx__item .music__item_ph .music__item_ph--img:hover, .merch-body .merch .afx__merch .music__item .afx__item_ph .afx__item_ph--img:hover, .merch-body .merch .afx__merch .music__item .afx__item_ph .music__item_ph--img:hover, .merch-body .merch .afx__merch .music__item .music__item_ph .afx__item_ph--img:hover, .merch-body .merch .afx__merch .music__item .music__item_ph .music__item_ph--img:hover, .merch-body .merch .music__merch .afx__item .afx__item_ph .afx__item_ph--img:hover, .merch-body .merch .music__merch .afx__item .afx__item_ph .music__item_ph--img:hover, .merch-body .merch .music__merch .afx__item .music__item_ph .afx__item_ph--img:hover, .merch-body .merch .music__merch .afx__item .music__item_ph .music__item_ph--img:hover, .merch-body .merch .music__merch .music__item .afx__item_ph .afx__item_ph--img:hover, .merch-body .merch .music__merch .music__item .afx__item_ph .music__item_ph--img:hover, .merch-body .merch .music__merch .music__item .music__item_ph .afx__item_ph--img:hover, .merch-body .merch .music__merch .music__item .music__item_ph .music__item_ph--img:hover {
+              -webkit-transform: scale(1.05);
+              transform: scale(1.05); }
+        .merch-body .afx .afx__merch .afx__item .afx__item_description, .merch-body .afx .afx__merch .afx__item .music__item_description, .merch-body .afx .afx__merch .music__item .afx__item_description, .merch-body .afx .afx__merch .music__item .music__item_description, .merch-body .afx .music__merch .afx__item .afx__item_description, .merch-body .afx .music__merch .afx__item .music__item_description, .merch-body .afx .music__merch .music__item .afx__item_description, .merch-body .afx .music__merch .music__item .music__item_description, .merch-body .merch .afx__merch .afx__item .afx__item_description, .merch-body .merch .afx__merch .afx__item .music__item_description, .merch-body .merch .afx__merch .music__item .afx__item_description, .merch-body .merch .afx__merch .music__item .music__item_description, .merch-body .merch .music__merch .afx__item .afx__item_description, .merch-body .merch .music__merch .afx__item .music__item_description, .merch-body .merch .music__merch .music__item .afx__item_description, .merch-body .merch .music__merch .music__item .music__item_description {
+          width: 360px;
+          text-align: center;
+          padding: 1rem 0;
+          height: 10rem; }
+          .merch-body .afx .afx__merch .afx__item .afx__item_description .afx__item_description--name, .merch-body .afx .afx__merch .afx__item .afx__item_description .music__item_description--name, .merch-body .afx .afx__merch .afx__item .music__item_description .afx__item_description--name, .merch-body .afx .afx__merch .afx__item .music__item_description .music__item_description--name, .merch-body .afx .afx__merch .music__item .afx__item_description .afx__item_description--name, .merch-body .afx .afx__merch .music__item .afx__item_description .music__item_description--name, .merch-body .afx .afx__merch .music__item .music__item_description .afx__item_description--name, .merch-body .afx .afx__merch .music__item .music__item_description .music__item_description--name, .merch-body .afx .music__merch .afx__item .afx__item_description .afx__item_description--name, .merch-body .afx .music__merch .afx__item .afx__item_description .music__item_description--name, .merch-body .afx .music__merch .afx__item .music__item_description .afx__item_description--name, .merch-body .afx .music__merch .afx__item .music__item_description .music__item_description--name, .merch-body .afx .music__merch .music__item .afx__item_description .afx__item_description--name, .merch-body .afx .music__merch .music__item .afx__item_description .music__item_description--name, .merch-body .afx .music__merch .music__item .music__item_description .afx__item_description--name, .merch-body .afx .music__merch .music__item .music__item_description .music__item_description--name, .merch-body .merch .afx__merch .afx__item .afx__item_description .afx__item_description--name, .merch-body .merch .afx__merch .afx__item .afx__item_description .music__item_description--name, .merch-body .merch .afx__merch .afx__item .music__item_description .afx__item_description--name, .merch-body .merch .afx__merch .afx__item .music__item_description .music__item_description--name, .merch-body .merch .afx__merch .music__item .afx__item_description .afx__item_description--name, .merch-body .merch .afx__merch .music__item .afx__item_description .music__item_description--name, .merch-body .merch .afx__merch .music__item .music__item_description .afx__item_description--name, .merch-body .merch .afx__merch .music__item .music__item_description .music__item_description--name, .merch-body .merch .music__merch .afx__item .afx__item_description .afx__item_description--name, .merch-body .merch .music__merch .afx__item .afx__item_description .music__item_description--name, .merch-body .merch .music__merch .afx__item .music__item_description .afx__item_description--name, .merch-body .merch .music__merch .afx__item .music__item_description .music__item_description--name, .merch-body .merch .music__merch .music__item .afx__item_description .afx__item_description--name, .merch-body .merch .music__merch .music__item .afx__item_description .music__item_description--name, .merch-body .merch .music__merch .music__item .music__item_description .afx__item_description--name, .merch-body .merch .music__merch .music__item .music__item_description .music__item_description--name {
+            font-size: 2rem;
+            font-style: italic;
+            text-decoration: none;
+            color: #000000; }
+
+.news-body {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 140px auto auto auto 200px;
+  grid-template-areas: "header" "main" "articles" "ac" "footer"; }
+  .news-body .main-article {
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5rem;
+    border-bottom: 1px solid #eeeeee;
+    background-color: #eeeeee; }
+    .news-body .main-article .main-article__imgcontainer {
+      max-width: 60vw; }
+      .news-body .main-article .main-article__imgcontainer .main-article__image {
+        max-width: 100%; }
+    .news-body .main-article .main-article__info {
+      width: 40vw;
+      padding: 3rem; }
+      .news-body .main-article .main-article__info .article__type--main {
+        font-size: 1.4rem;
+        font-weight: 300;
+        font-style: italic;
+        border-bottom: 1px solid #e1148f;
+        padding-bottom: 1rem; }
+      .news-body .main-article .main-article__info h2 {
+        padding-top: 2rem; }
+        .news-body .main-article .main-article__info h2 .article__title--main {
+          font-size: 2.3vw;
+          font-weight: 700;
+          font-style: italic;
+          text-decoration: none;
+          color: #e1148f; }
+      .news-body .main-article .main-article__info .article__description--main {
+        padding-top: 2rem;
+        font-size: 1.8rem;
+        font-weight: 400; }
+  .news-body .sec-news {
+    grid-area: articles;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5rem 0; }
+    .news-body .sec-news .sec-news__article {
+      display: flex;
+      flex-direction: column;
+      width: 25vw; }
+      .news-body .sec-news .sec-news__article .sec-news__imgcontainer {
+        max-height: 250px;
+        overflow: hidden; }
+        .news-body .sec-news .sec-news__article .sec-news__imgcontainer .sec-news__imgcontainer--img {
+          width: 100%;
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          -webkit-transition: .3s ease-in-out;
+          transition: .3s ease-in-out; }
+          .news-body .sec-news .sec-news__article .sec-news__imgcontainer .sec-news__imgcontainer--img:hover {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05); }
+      .news-body .sec-news .sec-news__article .sec-news__info .article__type--sec {
         font-size: 1.4rem;
         font-weight: 300;
         font-style: italic;
         padding: 1rem 0; }
-      .other-news .other-news__article .other-news__info .other-news__info--title a {
-        text-decoration: none;
-        color: #000000; }
-      .other-news .other-news__article .other-news__info .other-news__info--description {
+      .news-body .sec-news .sec-news__article .sec-news__info h3 {
+        max-height: 10rem;
+        overflow: hidden; }
+        .news-body .sec-news .sec-news__article .sec-news__info h3 .article__title--sec {
+          font-size: 1.8rem;
+          font-weight: 700;
+          font-style: italic;
+          text-decoration: none;
+          color: #000000; }
+      .news-body .sec-news .sec-news__article .sec-news__info .article__description--sec {
+        font-weight: 300;
         padding-top: 1rem; }
+  .news-body .other-news {
+    grid-area: ac;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem;
+    border-top: 1px solid #e1148f;
+    align-items: center; }
+    .news-body .other-news .other-news__article {
+      display: flex;
+      flex-direction: row;
+      width: 70vw; }
+      .news-body .other-news .other-news__article .other-news__imgcontainer {
+        height: 20vh; }
+        .news-body .other-news .other-news__article .other-news__imgcontainer .other-news__imgcontainer--img {
+          height: 100%; }
+      .news-body .other-news .other-news__article .other-news__info {
+        padding: 0 3rem; }
+        .news-body .other-news .other-news__article .other-news__info .other-news__info--type {
+          font-size: 1.4rem;
+          font-weight: 300;
+          font-style: italic;
+          padding: 1rem 0; }
+        .news-body .other-news .other-news__article .other-news__info h4 .other-news__info--title {
+          text-decoration: none;
+          color: #000000; }
 
 footer {
   grid-area: footer;
@@ -405,102 +505,128 @@ footer {
   text-align: center;
   background-color: #000000;
   padding: 3rem;
-  border-top: 5px solid #e1148f;
-  /* ----------------------------------------------
-    * Generated by Animista on 2021-11-7 4:56:51
-    * Licensed under FreeBSD License.
-    * See http://animista.net/license for more info. 
-    * w: http://animista.net, t: @cssanimista
-    * ---------------------------------------------- */
-  /**
-    * ----------------------------------------
-    * animation heartbeat
-    * ----------------------------------------
-    */ }
-  footer .footer__about .footer__about--title {
-    font-size: 2.5rem;
-    font-weight: 800;
-    font-style: italic;
-    color: #e1148f;
-    padding: 0 0 1rem; }
+  border-top: 5px solid #e1148f; }
   footer .footer__about p {
     font-size: 1.8rem;
-    font-weight: 600;
+    font-weight: 500;
     font-style: italic;
     color: #eeeeee;
     text-align: start;
     padding: 0.5rem 0; }
-  footer .footer__social--title {
+  footer .footer__social {
+    display: flex;
+    flex-direction: column; }
+    footer .footer__social .footer__social__social-icons--svg, footer .footer__social .footer__social__social-icons--link {
+      padding: 0.5rem;
+      text-decoration: none; }
+  footer .footer__about .footer__about--title, footer .footer__about .footer__social--title, footer .footer__social .footer__about--title, footer .footer__social .footer__social--title {
     font-size: 2.5rem;
     font-weight: 800;
     font-style: italic;
     color: #e1148f;
     padding: 0 0 1rem; }
-  footer .footer__social__social-icons--svg, footer .footer__social__social-icons--link {
-    padding: 0.5rem;
-    text-decoration: none; }
-  footer .heartbeat {
-    -webkit-animation: heartbeat 1.5s steps(1, start) 1s infinite both;
-    animation: heartbeat 1.5s steps(1, start) 1s infinite both; }
 
-@-webkit-keyframes heartbeat {
-  from {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transform-origin: center center;
-    transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out; }
-  10% {
-    -webkit-transform: scale(0.91);
-    transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in; }
-  17% {
-    -webkit-transform: scale(0.98);
-    transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out; }
-  33% {
-    -webkit-transform: scale(0.87);
-    transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in; }
-  45% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out; } }
-
-@keyframes heartbeat {
-  from {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transform-origin: center center;
-    transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out; }
-  10% {
-    -webkit-transform: scale(0.91);
-    transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in; }
-  17% {
-    -webkit-transform: scale(0.98);
-    transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out; }
-  33% {
-    -webkit-transform: scale(0.87);
-    transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in; }
-  45% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out; } }
+@media screen and (max-width: 576px) {
+  .footer {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem; }
+    .footer .footer__about p {
+      text-align: center; } }
 
 @media screen and (max-width: 1280px) {
   .container {
-    grid-template-rows: auto 400px auto auto 200px; } }
+    grid-template-rows: 140px 400px auto auto auto 200px; }
+  .news-body main .main-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .news-body main .main-article .main-article__imgcontainer {
+      max-width: 100vw; }
+    .news-body main .main-article .main-article__info {
+      width: 100%;
+      box-sizing: border-box;
+      text-align: center; }
+      .news-body main .main-article .main-article__info h3 .article__title--main {
+        font-size: 3rem; }
+  .recs-body .AOTW-section .recs-section .rec-album {
+    flex-direction: column;
+    align-items: center; }
+    .recs-body .AOTW-section .recs-section .rec-album .rec-album__cover {
+      width: 75%; }
+    .recs-body .AOTW-section .recs-section .rec-album .rec-album__info {
+      width: 75%;
+      border-right: 1px solid #eeeeee; } }
+
+@media screen and (max-width: 992px) {
+  .container {
+    grid-template-rows: 140px 400px auto auto auto 200px; }
+  .news-body main .main-article .main-article__info h2 .article__title--main {
+    font-size: 3rem; }
+  .news-body main .sec-news {
+    flex-direction: column;
+    align-items: center; }
+    .news-body main .sec-news .sec-news__article {
+      width: 75vw;
+      margin: 3rem 0; }
+      .news-body main .sec-news .sec-news__article .sec-news__imgcontainer .sec-news__imgcontainer--img {
+        width: 100%; } }
+
+@media screen and (max-width: 768px) {
+  .container .section-2 {
+    grid-template-rows: 140px 400px auto auto auto 200px;
+    flex-direction: column; }
+  .container .service-items {
+    flex-direction: column;
+    height: 250px; }
+    .container .service-items div p {
+      font-size: 1.8rem;
+      width: 90vw; }
+  .news-body main .sec-news .sec-news__article .sec-news__info .article__type--sec {
+    text-align: center; }
+  .news-body main .sec-news .sec-news__article .sec-news__info h3 {
+    text-align: center; }
+  .news-body main .other-news .other-news__article {
+    flex-direction: column; }
+    .news-body main .other-news .other-news__article .other-news__imgcontainer {
+      height: 250px; }
+      .news-body main .other-news .other-news__article .other-news__imgcontainer .other-news__imgcontainer--img {
+        width: 100%;
+        object-fit: cover; } }
+
+@media screen and (max-width: 576px) {
+  .container {
+    grid-template-rows: 140px 400px auto auto auto 360px; }
+  .catalogue-body {
+    grid-template-rows: 140px auto auto auto 360px; }
+    .catalogue-body main .promo .promo__section-title .promo__section-title--h2, .catalogue-body main .promo .promo__section-title .notable__section-title--h2, .catalogue-body main .promo .promo__section-title .classics__section-title--h2, .catalogue-body main .promo .notable__section-title .promo__section-title--h2, .catalogue-body main .promo .notable__section-title .notable__section-title--h2, .catalogue-body main .promo .notable__section-title .classics__section-title--h2, .catalogue-body main .promo .classics__section-title .promo__section-title--h2, .catalogue-body main .promo .classics__section-title .notable__section-title--h2, .catalogue-body main .promo .classics__section-title .classics__section-title--h2, .catalogue-body main .notable .promo__section-title .promo__section-title--h2, .catalogue-body main .notable .promo__section-title .notable__section-title--h2, .catalogue-body main .notable .promo__section-title .classics__section-title--h2, .catalogue-body main .notable .notable__section-title .promo__section-title--h2, .catalogue-body main .notable .notable__section-title .notable__section-title--h2, .catalogue-body main .notable .notable__section-title .classics__section-title--h2, .catalogue-body main .notable .classics__section-title .promo__section-title--h2, .catalogue-body main .notable .classics__section-title .notable__section-title--h2, .catalogue-body main .notable .classics__section-title .classics__section-title--h2, .catalogue-body main .classics .promo__section-title .promo__section-title--h2, .catalogue-body main .classics .promo__section-title .notable__section-title--h2, .catalogue-body main .classics .promo__section-title .classics__section-title--h2, .catalogue-body main .classics .notable__section-title .promo__section-title--h2, .catalogue-body main .classics .notable__section-title .notable__section-title--h2, .catalogue-body main .classics .notable__section-title .classics__section-title--h2, .catalogue-body main .classics .classics__section-title .promo__section-title--h2, .catalogue-body main .classics .classics__section-title .notable__section-title--h2, .catalogue-body main .classics .classics__section-title .classics__section-title--h2 {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 900;
+      font-style: italic;
+      padding: 3rem 0; }
+    .catalogue-body main .promo .promo__content .promo__album .album-cover, .catalogue-body main .promo .promo__content .notable__album .album-cover, .catalogue-body main .promo .promo__content .classics__album .album-cover, .catalogue-body main .promo .notable__content .promo__album .album-cover, .catalogue-body main .promo .notable__content .notable__album .album-cover, .catalogue-body main .promo .notable__content .classics__album .album-cover, .catalogue-body main .promo .classics__content .promo__album .album-cover, .catalogue-body main .promo .classics__content .notable__album .album-cover, .catalogue-body main .promo .classics__content .classics__album .album-cover, .catalogue-body main .notable .promo__content .promo__album .album-cover, .catalogue-body main .notable .promo__content .notable__album .album-cover, .catalogue-body main .notable .promo__content .classics__album .album-cover, .catalogue-body main .notable .notable__content .promo__album .album-cover, .catalogue-body main .notable .notable__content .notable__album .album-cover, .catalogue-body main .notable .notable__content .classics__album .album-cover, .catalogue-body main .notable .classics__content .promo__album .album-cover, .catalogue-body main .notable .classics__content .notable__album .album-cover, .catalogue-body main .notable .classics__content .classics__album .album-cover, .catalogue-body main .classics .promo__content .promo__album .album-cover, .catalogue-body main .classics .promo__content .notable__album .album-cover, .catalogue-body main .classics .promo__content .classics__album .album-cover, .catalogue-body main .classics .notable__content .promo__album .album-cover, .catalogue-body main .classics .notable__content .notable__album .album-cover, .catalogue-body main .classics .notable__content .classics__album .album-cover, .catalogue-body main .classics .classics__content .promo__album .album-cover, .catalogue-body main .classics .classics__content .notable__album .album-cover, .catalogue-body main .classics .classics__content .classics__album .album-cover {
+      overflow: hidden;
+      width: 75vw;
+      height: fit-content; }
+    .catalogue-body main .promo .promo__content .promo__album .album__description, .catalogue-body main .promo .promo__content .notable__album .album__description, .catalogue-body main .promo .promo__content .classics__album .album__description, .catalogue-body main .promo .notable__content .promo__album .album__description, .catalogue-body main .promo .notable__content .notable__album .album__description, .catalogue-body main .promo .notable__content .classics__album .album__description, .catalogue-body main .promo .classics__content .promo__album .album__description, .catalogue-body main .promo .classics__content .notable__album .album__description, .catalogue-body main .promo .classics__content .classics__album .album__description, .catalogue-body main .notable .promo__content .promo__album .album__description, .catalogue-body main .notable .promo__content .notable__album .album__description, .catalogue-body main .notable .promo__content .classics__album .album__description, .catalogue-body main .notable .notable__content .promo__album .album__description, .catalogue-body main .notable .notable__content .notable__album .album__description, .catalogue-body main .notable .notable__content .classics__album .album__description, .catalogue-body main .notable .classics__content .promo__album .album__description, .catalogue-body main .notable .classics__content .notable__album .album__description, .catalogue-body main .notable .classics__content .classics__album .album__description, .catalogue-body main .classics .promo__content .promo__album .album__description, .catalogue-body main .classics .promo__content .notable__album .album__description, .catalogue-body main .classics .promo__content .classics__album .album__description, .catalogue-body main .classics .notable__content .promo__album .album__description, .catalogue-body main .classics .notable__content .notable__album .album__description, .catalogue-body main .classics .notable__content .classics__album .album__description, .catalogue-body main .classics .classics__content .promo__album .album__description, .catalogue-body main .classics .classics__content .notable__album .album__description, .catalogue-body main .classics .classics__content .classics__album .album__description {
+      text-align: center;
+      width: 75vw; }
+      .catalogue-body main .promo .promo__content .promo__album .album__description h3 a, .catalogue-body main .promo .promo__content .notable__album .album__description h3 a, .catalogue-body main .promo .promo__content .classics__album .album__description h3 a, .catalogue-body main .promo .notable__content .promo__album .album__description h3 a, .catalogue-body main .promo .notable__content .notable__album .album__description h3 a, .catalogue-body main .promo .notable__content .classics__album .album__description h3 a, .catalogue-body main .promo .classics__content .promo__album .album__description h3 a, .catalogue-body main .promo .classics__content .notable__album .album__description h3 a, .catalogue-body main .promo .classics__content .classics__album .album__description h3 a, .catalogue-body main .notable .promo__content .promo__album .album__description h3 a, .catalogue-body main .notable .promo__content .notable__album .album__description h3 a, .catalogue-body main .notable .promo__content .classics__album .album__description h3 a, .catalogue-body main .notable .notable__content .promo__album .album__description h3 a, .catalogue-body main .notable .notable__content .notable__album .album__description h3 a, .catalogue-body main .notable .notable__content .classics__album .album__description h3 a, .catalogue-body main .notable .classics__content .promo__album .album__description h3 a, .catalogue-body main .notable .classics__content .notable__album .album__description h3 a, .catalogue-body main .notable .classics__content .classics__album .album__description h3 a, .catalogue-body main .classics .promo__content .promo__album .album__description h3 a, .catalogue-body main .classics .promo__content .notable__album .album__description h3 a, .catalogue-body main .classics .promo__content .classics__album .album__description h3 a, .catalogue-body main .classics .notable__content .promo__album .album__description h3 a, .catalogue-body main .classics .notable__content .notable__album .album__description h3 a, .catalogue-body main .classics .notable__content .classics__album .album__description h3 a, .catalogue-body main .classics .classics__content .promo__album .album__description h3 a, .catalogue-body main .classics .classics__content .notable__album .album__description h3 a, .catalogue-body main .classics .classics__content .classics__album .album__description h3 a {
+        font-size: 2.1rem; }
+      .catalogue-body main .promo .promo__content .promo__album .album__description p, .catalogue-body main .promo .promo__content .notable__album .album__description p, .catalogue-body main .promo .promo__content .classics__album .album__description p, .catalogue-body main .promo .notable__content .promo__album .album__description p, .catalogue-body main .promo .notable__content .notable__album .album__description p, .catalogue-body main .promo .notable__content .classics__album .album__description p, .catalogue-body main .promo .classics__content .promo__album .album__description p, .catalogue-body main .promo .classics__content .notable__album .album__description p, .catalogue-body main .promo .classics__content .classics__album .album__description p, .catalogue-body main .notable .promo__content .promo__album .album__description p, .catalogue-body main .notable .promo__content .notable__album .album__description p, .catalogue-body main .notable .promo__content .classics__album .album__description p, .catalogue-body main .notable .notable__content .promo__album .album__description p, .catalogue-body main .notable .notable__content .notable__album .album__description p, .catalogue-body main .notable .notable__content .classics__album .album__description p, .catalogue-body main .notable .classics__content .promo__album .album__description p, .catalogue-body main .notable .classics__content .notable__album .album__description p, .catalogue-body main .notable .classics__content .classics__album .album__description p, .catalogue-body main .classics .promo__content .promo__album .album__description p, .catalogue-body main .classics .promo__content .notable__album .album__description p, .catalogue-body main .classics .promo__content .classics__album .album__description p, .catalogue-body main .classics .notable__content .promo__album .album__description p, .catalogue-body main .classics .notable__content .notable__album .album__description p, .catalogue-body main .classics .notable__content .classics__album .album__description p, .catalogue-body main .classics .classics__content .promo__album .album__description p, .catalogue-body main .classics .classics__content .notable__album .album__description p, .catalogue-body main .classics .classics__content .classics__album .album__description p {
+        font-size: 1.6rem; }
+  .recs-body {
+    grid-template-rows: 125px auto 360px; }
+    .recs-body .AOTW-section .recs-section .rec-album .rec-album__cover {
+      width: 90%; }
+    .recs-body .AOTW-section .recs-section .rec-album .rec-album__info {
+      width: 90%; }
+  .merch-body {
+    grid-template-rows: 140px auto 360px; }
+  .news-body {
+    grid-template-rows: 140px auto auto auto 360px; }
+  .recs-body, .merch-body, .news-body {
+    justify-content: center;
+    overflow-x: hidden; } }

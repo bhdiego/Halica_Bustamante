@@ -8,83 +8,6 @@
 html {
   font-size: 62.5%; }
 
-.header {
-  grid-area: header;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  box-sizing: border-box;
-  align-items: center;
-  border-bottom: 1px solid #eeeeee;
-  padding: 2rem; }
-  .header .header__title {
-    font-size: 3.3rem;
-    font-weight: 900;
-    font-style: italic;
-    text-decoration: none;
-    color: #e1148f;
-    padding: 0 2rem; }
-  .header .nav {
-    display: flex;
-    flex-direction: row; }
-    .header .nav .nav__element {
-      list-style: none;
-      padding: 2rem; }
-      .header .nav .nav__element .nav__item {
-        font-size: 2rem;
-        font-weight: 900;
-        font-style: italic;
-        text-transform: lowercase;
-        text-decoration: none;
-        color: #0096c7; }
-
-@media screen and (max-width: 1280px) {
-  .header .nav__element .nav__item {
-    font-size: 2rem; } }
-
-@media screen and (max-width: 992px) {
-  .header {
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #000000;
-    border-bottom: 1px solid #eeeeee; }
-    .header .h1 .header__title {
-      font-size: 3rem;
-      font-weight: 900;
-      font-style: italic;
-      text-decoration: none;
-      color: #e1148f; }
-    .header .nav {
-      padding-left: 0; }
-      .header .nav .nav__element {
-        padding: 1rem 2rem 0; }
-        .header .nav .nav__element .nav__item {
-          font-size: 2rem;
-          color: #ffffff; } }
-
-@media screen and (max-width: 768px) {
-  .header .h1 {
-    margin-bottom: 2rem; }
-    .header .h1 .header__title {
-      font-size: 3rem;
-      font-weight: 900;
-      font-style: italic;
-      text-decoration: none;
-      color: #e1148f; }
-  .header .nav .nav__element {
-    padding: 0 3vw; }
-    .header .nav .nav__element .nav__item {
-      font-size: 1.8rem; } }
-
-@media screen and (max-width: 576px) {
-  .header .nav {
-    padding: 0 2rem; }
-    .header .nav .nav__element {
-      padding: 0 1.6rem; }
-      .header .nav .nav__element .nav__item {
-        font-size: 1.8rem; } }
-
 .container {
   display: grid;
   grid-auto-columns: 1fr;
@@ -496,6 +419,83 @@ html {
         .news-body .other-news .other-news__article .other-news__info h4 .other-news__info--title {
           text-decoration: none;
           color: #000000; }
+
+.header {
+  grid-area: header;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: center;
+  border-bottom: 1px solid #eeeeee;
+  padding: 2rem; }
+  .header .header__title {
+    font-size: 3.3rem;
+    font-weight: 900;
+    font-style: italic;
+    text-decoration: none;
+    color: #e1148f;
+    padding: 0 2rem; }
+  .header .nav {
+    display: flex;
+    flex-direction: row; }
+    .header .nav .nav__element {
+      list-style: none;
+      padding: 2rem; }
+      .header .nav .nav__element .nav__item {
+        font-size: 2rem;
+        font-weight: 900;
+        font-style: italic;
+        text-transform: lowercase;
+        text-decoration: none;
+        color: #0096c7; }
+
+@media screen and (max-width: 1280px) {
+  .header .nav__element .nav__item {
+    font-size: 2rem; } }
+
+@media screen and (max-width: 992px) {
+  .header {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #000000;
+    border-bottom: 1px solid #eeeeee; }
+    .header .h1 .header__title {
+      font-size: 3rem;
+      font-weight: 900;
+      font-style: italic;
+      text-decoration: none;
+      color: #e1148f; }
+    .header .nav {
+      padding-left: 0; }
+      .header .nav .nav__element {
+        padding: 1rem 2rem 0; }
+        .header .nav .nav__element .nav__item {
+          font-size: 2rem;
+          color: #ffffff; } }
+
+@media screen and (max-width: 768px) {
+  .header .h1 {
+    margin-bottom: 2rem; }
+    .header .h1 .header__title {
+      font-size: 3rem;
+      font-weight: 900;
+      font-style: italic;
+      text-decoration: none;
+      color: #e1148f; }
+  .header .nav .nav__element {
+    padding: 0 3vw; }
+    .header .nav .nav__element .nav__item {
+      font-size: 1.8rem; } }
+
+@media screen and (max-width: 576px) {
+  .header .nav {
+    padding: 0 2rem; }
+    .header .nav .nav__element {
+      padding: 0 1.6rem; }
+      .header .nav .nav__element .nav__item {
+        font-size: 1.8rem; } }
 
 footer {
   grid-area: footer;

@@ -1,8 +1,8 @@
 // Index
 
 @media screen and (max-width: 1280px) {
-    .container {
-        grid-template-rows: 140px 400px auto auto auto 200px;
+    .index-container {
+        grid-template-rows: auto 400px auto auto auto 250px;
     }
 
     .news-body {
@@ -58,8 +58,8 @@
 }
 
 @media screen and (max-width: 992px) {
-    .container {
-        grid-template-rows: 140px 400px auto auto auto 200px;
+    .index-container {
+        grid-template-rows: auto 400px auto auto auto 250px;
     }
 
     .news-body {
@@ -99,10 +99,10 @@
 }
 
 @media screen and (max-width: 768px) {
-    .container {
-        
+    .index-container {
+        grid-template-rows: auto 400px auto auto auto 250px;
+
         .section-2 {
-            grid-template-rows: 140px 400px auto auto auto 200px;
             flex-direction: column;
         }
 
@@ -172,12 +172,31 @@
 }
 
 @media screen and (max-width: 576px) {
-    .container {
-        grid-template-rows: 140px 400px auto auto auto 360px;
+    .index-container {
+        grid-template-rows: auto 400px auto auto auto 360px;
+
+        .section-1, .section-2 {
+
+            .section-1__new-release, .section-2__aotw, .section-2__classic {
+
+                .new-release__type, .aotw__type, .classic__type {
+                    padding-bottom: 1.4rem;
+                }
+
+                .new-release__title, .aotw__title, .classic__title {
+                    font-size: 2rem;
+                }
+
+                .new-release__description, .aotw__description, .classic__description {
+                    width: 100%;
+                    font-size: 1.5rem;
+                }
+            }
+        }
     }
 
     .catalogue-body {
-        grid-template-rows: 140px auto auto auto 360px;
+        grid-template-rows: auto auto auto auto 360px;
 
         main {
             .promo, .notable, .classics {
@@ -225,7 +244,7 @@
     }
 
     .recs-body {
-        grid-template-rows: 125px auto 360px;
+        grid-template-rows: auto auto 360px;
 
         .AOTW-section {
 
@@ -246,19 +265,14 @@
     }
 
     .merch-body {
-        grid-template-rows: 140px auto 360px;
+        grid-template-rows: auto auto 360px;
     }
     
     .news-body {
-        grid-template-rows: 140px auto auto auto 360px;
+        grid-template-rows: auto auto auto auto 360px;
     }
 
     .error-body {
-        grid-template-rows: 140px auto 360px;
-    }
-
-    .recs-body, .merch-body, .news-body, .error-body {
-        justify-content: center;
-        overflow-x: hidden;
+        grid-template-rows: auto auto 360px;
     }
 }

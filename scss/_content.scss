@@ -1,13 +1,12 @@
 // Index
 
-.container {
+.index-container {
     display: grid; 
     grid-auto-columns: 1fr; 
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 140px 500px 450px auto auto 200px; 
-    gap: 0 1px; 
+    grid-template-rows: auto 500px 450px auto auto auto;
     grid-template-areas: 
-        "header header"
+        "navbar navbar"
         "section-1 section-1"
         "section-2 section-2"
         "serv serv"
@@ -15,6 +14,39 @@
         "footer footer"; 
     width: 100%;
     height: 100%;
+
+    .navbar {
+        grid-area: navbar;
+        background-color: transparent;
+
+        .container-fluid {
+
+            #navbar-title {
+                font-size: 3rem;
+                color: $main-color;
+                font-weight: $black-weight;
+                padding: 0 4rem;
+            }
+
+            .collapse {
+
+                .navbar-nav {
+                    padding: 0 2rem;
+
+                    .nav-item {
+                        padding: 0 2rem;
+
+                        #nlt {
+                            color: $secondary-color;
+                            font-size: 2rem;
+                            font-weight: $black-weight;
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     .section-1 {
         grid-area: section-1;
@@ -55,30 +87,30 @@
             box-sizing: border-box;
             overflow: hidden;
             padding: 4rem;
-        }
 
-        .new-release__type, .aotw__type, .classic__type {
-            font-weight: $light-weight;
-            color: #ffffff;
-            text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.70);
-            padding-bottom: 2rem;
-        }
+            .new-release__type, .aotw__type, .classic__type {
+                font-weight: $light-weight;
+                color: #ffffff;
+                text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.70);
+                padding-bottom: 2rem;
+            }
 
-        .new-release__title, .aotw__title, .classic__title {
-            font-size: 2.5rem;
-            font-weight: $black-weight;
-            font-style: italic;
-            color: #ffffff;
-            text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.50);
-        }
+            .new-release__title, .aotw__title, .classic__title {
+                font-size: 2.5rem;
+                font-weight: $black-weight;
+                font-style: italic;
+                color: #ffffff;
+                text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.50);
+            }
 
-        .new-release__description, .aotw__description, .classic__description {
-            width: 50%;
-            font-weight: $normal-weight;
-            font-style: italic;
-            padding: 3rem 0;
-            color: #ffffff;
-            text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.70);
+            .new-release__description, .aotw__description, .classic__description {
+                width: 50%;
+                font-weight: $normal-weight;
+                font-style: italic;
+                padding: 3rem 0;
+                color: #ffffff;
+                text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.70);
+            }
         }
     }
 
@@ -200,9 +232,9 @@
     display: grid; 
     grid-auto-columns: 1fr; 
     grid-template-columns: 1fr; 
-    grid-template-rows: 140px auto auto auto 200px;
+    grid-template-rows: auto auto auto auto 300px;
     grid-template-areas: 
-      "header"
+      "navbar"
       "promo"
       "notable"
       "classics"
@@ -211,6 +243,39 @@
     overflow-x: hidden;
     width: 100%;
     height: 100%;
+
+    .navbar {
+        grid-area: navbar;
+        background-color: transparent;
+
+        .container-fluid {
+
+            #navbar-title {
+                font-size: 3rem;
+                color: $main-color;
+                font-weight: $black-weight;
+                padding: 0 4rem;
+            }
+
+            .collapse {
+
+                .navbar-nav {
+                    padding: 0 2rem;
+
+                    .nav-item {
+                        padding: 0 2rem;
+
+                        #nlt {
+                            color: #0096c7;
+                            font-size: 2rem;
+                            font-weight: 900;
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     .promo {
         grid-area: promo;
@@ -300,13 +365,46 @@
     display: grid; 
     grid-auto-columns: 1fr; 
     grid-template-columns: 1fr; 
-    grid-template-rows: 140px auto 200px; 
+    grid-template-rows: auto auto 300px; 
     grid-template-areas: 
-      "header"
+      "navbar"
       "recs"
       "footer"; 
     width: 100%;
     height: 100%;
+
+    .navbar {
+        grid-area: navbar;
+        background-color: transparent;
+
+        .container-fluid {
+
+            #navbar-title {
+                font-size: 3rem;
+                color: $main-color;
+                font-weight: $black-weight;
+                padding: 0 4rem;
+            }
+
+            .collapse {
+
+                .navbar-nav {
+                    padding: 0 2rem;
+
+                    .nav-item {
+                        padding: 0 2rem;
+
+                        #nlt {
+                            color: #0096c7;
+                            font-size: 2rem;
+                            font-weight: 900;
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+        }
+    }
     
     .AOTW-section {
         grid-area: recs;
@@ -393,13 +491,46 @@
     display: grid; 
     grid-auto-columns: 1fr; 
     grid-template-columns: 1fr; 
-    grid-template-rows: 140px auto 200px; 
+    grid-template-rows: auto auto 300px; 
     grid-template-areas: 
-      "header"
+      "navbar"
       "main"
       "footer";
     width: 100%;
     height: 100%;
+
+    .navbar {
+        grid-area: navbar;
+        background-color: transparent;
+
+        .container-fluid {
+
+            #navbar-title {
+                font-size: 3rem;
+                color: $main-color;
+                font-weight: $black-weight;
+                padding: 0 4rem;
+            }
+
+            .collapse {
+
+                .navbar-nav {
+                    padding: 0 2rem;
+
+                    .nav-item {
+                        padding: 0 2rem;
+
+                        #nlt {
+                            color: #0096c7;
+                            font-size: 2rem;
+                            font-weight: 900;
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+        }
+    }
     
     .afx, .merch {
         display: flex;
@@ -472,13 +603,46 @@
     display: grid; 
     grid-auto-columns: 1fr; 
     grid-template-columns: 1fr; 
-    grid-template-rows: 140px auto auto auto 200px; 
+    grid-template-rows: auto auto auto auto 300px; 
     grid-template-areas: 
-      "header"
+      "navbar"
       "main"
       "articles"
       "ac"
       "footer";
+
+    .navbar {
+        grid-area: navbar;
+        background-color: transparent;
+
+        .container-fluid {
+
+            #navbar-title {
+                font-size: 3rem;
+                color: $main-color;
+                font-weight: $black-weight;
+                padding: 0 4rem;
+            }
+
+            .collapse {
+
+                .navbar-nav {
+                    padding: 0 2rem;
+
+                    .nav-item {
+                        padding: 0 2rem;
+
+                        #nlt {
+                            color: #0096c7;
+                            font-size: 2rem;
+                            font-weight: 900;
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     .main-article {
         grid-area: main;
@@ -638,14 +802,46 @@
     display: grid; 
     grid-auto-columns: 1fr; 
     grid-template-columns: 1fr; 
-    grid-template-rows: 140px auto 200px;
-    gap: 1px 0px; 
+    grid-template-rows: auto auto 300px;
     grid-template-areas: 
-      "header"
+      "navbar"
       "error"
       "footer"; 
     width: 100%;
     height: 100%;
+
+    .navbar {
+        grid-area: navbar;
+        background-color: transparent;
+
+        .container-fluid {
+
+            #navbar-title {
+                font-size: 3rem;
+                color: $main-color;
+                font-weight: $black-weight;
+                padding: 0 4rem;
+            }
+
+            .collapse {
+
+                .navbar-nav {
+                    padding: 0 2rem;
+
+                    .nav-item {
+                        padding: 0 2rem;
+
+                        #nlt {
+                            color: #0096c7;
+                            font-size: 2rem;
+                            font-weight: 900;
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     .error {
         display: flex;

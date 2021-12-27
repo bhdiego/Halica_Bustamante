@@ -247,10 +247,9 @@
             border-bottom: $sc-border;
 
             .promo__section-title--h2, .notable__section-title--h2, .classics__section-title--h2 {
+                font-family: 'UltraHyper';
                 text-align: center;
                 font-size: 3rem;
-                font-weight: 900;
-                font-style: italic;
                 padding: 3rem 0;
             }
         }
@@ -292,6 +291,7 @@
                     overflow: hidden;
                     
                     h3 {
+                        font-weight: $bold-weight;
                         font-style: italic;
                         padding: 1rem 1rem 0.5rem 0;
 
@@ -302,7 +302,7 @@
                     }
                     
                     p {
-                        font-size: 1.2rem;
+                        font-size: 1.4rem;
                         padding: 0 0.5rem 0.5rem 0;
                     }
                 }
@@ -334,9 +334,8 @@
         .AOTW-section__title {
 
             .AOTW-section__title--h2 {
+                font-family: 'UltraHyper';
                 font-size: 3rem;
-                font-weight: $black-weight;
-                font-style: italic;
                 padding: 3rem;
                 border-bottom: $mc-border;
             }
@@ -460,10 +459,9 @@
             }
 
             .merch__title--h2 {
-                font-family: 'Raleway', sans-serif;
-                font-weight: $black-weight;
-                font-size: 2.5rem;
-                font-style: italic;
+                font-family: 'UltraHyper';
+                font-size: 3rem;
+                letter-spacing: 0.1rem;
             }
 
             .afx__title--h2, .mbv__title--h2, .merch__title--h2 {

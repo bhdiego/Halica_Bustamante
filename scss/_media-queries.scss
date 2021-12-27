@@ -2,7 +2,7 @@
 
 @media screen and (max-width: 1280px) {
     .index-container {
-        grid-template-rows: auto 400px auto auto auto 250px;
+        grid-template-rows: auto 400px auto auto auto auto 250px;
     }
 
     .news-body {
@@ -160,7 +160,7 @@
 
 @media screen and (max-width: 768px) {
     .index-container {
-        grid-template-rows: auto 400px auto auto auto 250px;
+        grid-template-rows: auto 400px auto auto auto auto 250px;
 
         .section-2 {
             flex-direction: column;
@@ -175,6 +175,28 @@
                 p {
                     font-size: 1.8rem;
                     width: 90vw;
+                }
+            }
+        }
+
+        .newsletter {
+            
+            .newsletter__container {
+                width: 90%;
+
+                .newsletter__container--title {
+                    font-size: 2.5rem;
+                }
+
+                .newsletter__container--p {
+                    font-size: 1.8rem;
+                }
+
+                .newsletter__container_form {
+                    
+                    .form-control {
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -233,7 +255,7 @@
 
 @media screen and (max-width: 576px) {
     .index-container {
-        grid-template-rows: auto 400px auto auto auto 360px;
+        grid-template-rows: auto 400px auto auto auto auto 360px;
 
         .section-1, .section-2 {
 

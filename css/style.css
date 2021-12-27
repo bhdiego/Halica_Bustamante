@@ -30,8 +30,8 @@ html {
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 500px 450px auto auto 220px;
-  grid-template-areas: "navbar navbar" "section-1 section-1" "section-2 section-2" "serv serv" "products products" "footer footer";
+  grid-template-rows: auto 500px 450px auto auto auto 220px;
+  grid-template-areas: "navbar navbar" "section-1 section-1" "section-2 section-2" "serv serv" "products products" "newsletter newsletter" "footer footer";
   width: 100%;
   height: 100%; }
   .index-container .section-1 {
@@ -169,6 +169,34 @@ html {
   100% {
     -webkit-box-shadow: -12px 0 20px -12px rgba(0, 0, 0, 0.35), 12px 0 20px -12px rgba(0, 0, 0, 0.35);
     box-shadow: -12px 0 20px -12px rgba(0, 0, 0, 0.35), 12px 0 20px -12px rgba(0, 0, 0, 0.35); } }
+  .index-container .newsletter {
+    grid-area: newsletter;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee;
+    padding: 3rem; }
+    .index-container .newsletter .newsletter__container {
+      width: 40vw;
+      text-align: center; }
+      .index-container .newsletter .newsletter__container .newsletter__container--description {
+        font-family: 'UltraHyper';
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        padding: 1rem 0; }
+      .index-container .newsletter .newsletter__container .newsletter__container--title {
+        font-family: 'UltraHyper';
+        font-size: 3rem;
+        color: #ed1e79; }
+      .index-container .newsletter .newsletter__container .newsletter__container--p {
+        font-size: 2.1rem;
+        font-weight: 300;
+        padding: 1rem 0; }
+      .index-container .newsletter .newsletter__container .newsletter__container_form .form-control {
+        font-size: 1.6rem;
+        height: 4rem;
+        width: 100%; }
 
 .catalogue-body {
   display: grid;
@@ -581,7 +609,7 @@ footer {
 
 @media screen and (max-width: 1280px) {
   .index-container {
-    grid-template-rows: auto 400px auto auto auto 250px; }
+    grid-template-rows: auto 400px auto auto auto auto 250px; }
   .news-body main .main-article {
     display: flex;
     flex-direction: column;
@@ -644,7 +672,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   .index-container {
-    grid-template-rows: auto 400px auto auto auto 250px; }
+    grid-template-rows: auto 400px auto auto auto auto 250px; }
     .index-container .section-2 {
       flex-direction: column; }
     .index-container .service-items {
@@ -653,6 +681,14 @@ footer {
       .index-container .service-items div p {
         font-size: 1.8rem;
         width: 90vw; }
+    .index-container .newsletter .newsletter__container {
+      width: 90%; }
+      .index-container .newsletter .newsletter__container .newsletter__container--title {
+        font-size: 2.5rem; }
+      .index-container .newsletter .newsletter__container .newsletter__container--p {
+        font-size: 1.8rem; }
+      .index-container .newsletter .newsletter__container .newsletter__container_form .form-control {
+        width: 100%; }
   .news-body main .sec-news .sec-news__article .sec-news__info .article__type--sec {
     text-align: center; }
   .news-body main .sec-news .sec-news__article .sec-news__info h3, .news-body main .sec-news .sec-news__article .sec-news__info .h3 {
@@ -669,7 +705,7 @@ footer {
 
 @media screen and (max-width: 576px) {
   .index-container {
-    grid-template-rows: auto 400px auto auto auto 360px; }
+    grid-template-rows: auto 400px auto auto auto auto 360px; }
     .index-container .section-1 .section-1__new-release, .index-container .section-1 .section-2__aotw, .index-container .section-1 .section-2__classic, .index-container .section-2 .section-1__new-release, .index-container .section-2 .section-2__aotw, .index-container .section-2 .section-2__classic {
       padding: 3rem 2rem; }
       .index-container .section-1 .section-1__new-release .new-release__type, .index-container .section-1 .section-1__new-release .aotw__type, .index-container .section-1 .section-1__new-release .classic__type, .index-container .section-1 .section-2__aotw .new-release__type, .index-container .section-1 .section-2__aotw .aotw__type, .index-container .section-1 .section-2__aotw .classic__type, .index-container .section-1 .section-2__classic .new-release__type, .index-container .section-1 .section-2__classic .aotw__type, .index-container .section-1 .section-2__classic .classic__type, .index-container .section-2 .section-1__new-release .new-release__type, .index-container .section-2 .section-1__new-release .aotw__type, .index-container .section-2 .section-1__new-release .classic__type, .index-container .section-2 .section-2__aotw .new-release__type, .index-container .section-2 .section-2__aotw .aotw__type, .index-container .section-2 .section-2__aotw .classic__type, .index-container .section-2 .section-2__classic .new-release__type, .index-container .section-2 .section-2__classic .aotw__type, .index-container .section-2 .section-2__classic .classic__type {

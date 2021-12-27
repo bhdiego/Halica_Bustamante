@@ -465,28 +465,33 @@ html {
 
 .navbar {
   grid-area: navbar;
-  background-color: transparent; }
-  .navbar .container-fluid #navbar-title, .navbar .container-sm #navbar-title, .navbar .container-md #navbar-title, .navbar .container-lg #navbar-title, .navbar .container-xl #navbar-title, .navbar .container-xxl #navbar-title {
-    font-size: 3rem;
-    color: #ed1e79;
-    font-weight: 900;
-    padding: 0 4rem; }
+  background-color: #eeeeee; }
+  .navbar .container-fluid .halica_logo, .navbar .container-sm .halica_logo, .navbar .container-md .halica_logo, .navbar .container-lg .halica_logo, .navbar .container-xl .halica_logo, .navbar .container-xxl .halica_logo {
+    height: 120px;
+    padding: 0 4rem;
+    animation: pulse;
+    animation-duration: 3s; }
   .navbar .container-fluid .collapse .navbar-nav, .navbar .container-sm .collapse .navbar-nav, .navbar .container-md .collapse .navbar-nav, .navbar .container-lg .collapse .navbar-nav, .navbar .container-xl .collapse .navbar-nav, .navbar .container-xxl .collapse .navbar-nav {
     padding: 0 2rem; }
     .navbar .container-fluid .collapse .navbar-nav .nav-item, .navbar .container-sm .collapse .navbar-nav .nav-item, .navbar .container-md .collapse .navbar-nav .nav-item, .navbar .container-lg .collapse .navbar-nav .nav-item, .navbar .container-xl .collapse .navbar-nav .nav-item, .navbar .container-xxl .collapse .navbar-nav .nav-item {
       padding: 0 2rem; }
       .navbar .container-fluid .collapse .navbar-nav .nav-item #nlt, .navbar .container-sm .collapse .navbar-nav .nav-item #nlt, .navbar .container-md .collapse .navbar-nav .nav-item #nlt, .navbar .container-lg .collapse .navbar-nav .nav-item #nlt, .navbar .container-xl .collapse .navbar-nav .nav-item #nlt, .navbar .container-xxl .collapse .navbar-nav .nav-item #nlt {
-        color: #0096c7;
-        font-size: 2rem;
-        font-weight: 900;
-        font-style: italic; }
+        font-family: 'UltraHyper';
+        font-style: italic;
+        text-transform: lowercase;
+        color: #ed1e79;
+        font-size: 2.7rem; }
+
+@media screen and (max-width: 1280px) {
+  .navbar .container-fluid .collapse .navbar-nav .nav-item #nlt, .navbar .container-sm .collapse .navbar-nav .nav-item #nlt, .navbar .container-md .collapse .navbar-nav .nav-item #nlt, .navbar .container-lg .collapse .navbar-nav .nav-item #nlt, .navbar .container-xl .collapse .navbar-nav .nav-item #nlt, .navbar .container-xxl .collapse .navbar-nav .nav-item #nlt {
+    font-size: 2.1rem; } }
 
 @media screen and (max-width: 576px) {
-  .navbar .container-fluid #navbar-title, .navbar .container-sm #navbar-title, .navbar .container-md #navbar-title, .navbar .container-lg #navbar-title, .navbar .container-xl #navbar-title, .navbar .container-xxl #navbar-title {
-    font-size: 2.5rem;
-    padding: 0 2rem; }
+  .navbar .container-fluid .halica_logo, .navbar .container-sm .halica_logo, .navbar .container-md .halica_logo, .navbar .container-lg .halica_logo, .navbar .container-xl .halica_logo, .navbar .container-xxl .halica_logo {
+    height: 90px;
+    padding: 0 1rem; }
   .navbar .container-fluid .collapse .navbar-nav, .navbar .container-sm .collapse .navbar-nav, .navbar .container-md .collapse .navbar-nav, .navbar .container-lg .collapse .navbar-nav, .navbar .container-xl .collapse .navbar-nav, .navbar .container-xxl .collapse .navbar-nav {
-    padding: 0 3rem; }
+    padding: 0 4rem; }
     .navbar .container-fluid .collapse .navbar-nav .nav-item, .navbar .container-sm .collapse .navbar-nav .nav-item, .navbar .container-md .collapse .navbar-nav .nav-item, .navbar .container-lg .collapse .navbar-nav .nav-item, .navbar .container-xl .collapse .navbar-nav .nav-item, .navbar .container-xxl .collapse .navbar-nav .nav-item {
       padding: 0; }
       .navbar .container-fluid .collapse .navbar-nav .nav-item #nlt, .navbar .container-sm .collapse .navbar-nav .nav-item #nlt, .navbar .container-md .collapse .navbar-nav .nav-item #nlt, .navbar .container-lg .collapse .navbar-nav .nav-item #nlt, .navbar .container-xl .collapse .navbar-nav .nav-item #nlt, .navbar .container-xxl .collapse .navbar-nav .nav-item #nlt {

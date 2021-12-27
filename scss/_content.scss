@@ -4,7 +4,7 @@
     display: grid; 
     grid-auto-columns: 1fr; 
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: auto 500px 450px auto auto auto;
+    grid-template-rows: auto 500px 450px auto auto 220px;
     grid-template-areas: 
         "navbar navbar"
         "section-1 section-1"
@@ -18,6 +18,7 @@
     .section-1 {
         grid-area: section-1;
         display: flex;
+        border-bottom: $sc-border-2;
 
         .section-1__new-release {
             background-image: url(../img/main/magdalena-bay.jpg);
@@ -27,7 +28,7 @@
             }
 
             .new-release__description {
-                width: 40%;
+                width: 30%;
             }
         }
     }
@@ -38,10 +39,20 @@
 
         .section-2__aotw {
             background-image: url(../img/main/weyes-blood.jpg);
+            border-right: $sc-border;
+
+            .aotw__description {
+                width: 50%;
+            }
         }
 
         .section-2__classic {
             background-image: url(../img/main/loveless_cover.jpg);
+            border-left: $sc-border;
+
+            .classic__description {
+                width: 50%;
+            }
         }
     }
 
@@ -56,9 +67,9 @@
             padding: 4rem;
 
             .new-release__type, .aotw__type, .classic__type {
-                font-weight: $light-weight;
+                font-weight: $normal-weight;
                 color: #ffffff;
-                text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.70);
+                text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
                 padding-bottom: 2rem;
             }
 
@@ -71,17 +82,16 @@
             }
 
             .new-release__description, .aotw__description, .classic__description {
-                width: 50%;
                 font-weight: $normal-weight;
                 font-style: italic;
                 padding: 3rem 0;
                 color: #ffffff;
-                text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.70);
+                text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
             }
         }
     }
 
-    .service-items {
+    .service-items-container {
         grid-area: serv;
         display: flex;
         flex-direction: row;
@@ -92,13 +102,22 @@
         text-align: center;
         margin-top: 3rem;
 
-        div {
+        .service-item {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
             
-            p {
-                width: 20vw;
-                font-size: 2.1rem;
-                font-weight: 700;
-                font-style: italic;
+            .service-item__box-svg {
+                width: 52px;
+            }
+            
+            .service-item__p {
+                font-family: 'UltraHyper';
+                font-size: 1.8rem;
+                padding: 0 3rem;
+                text-align: center;
             }
         }
     }
@@ -114,6 +133,7 @@
             text-align: center;
 
             .products-section__title--title-name {
+                font-family: 'UltraHyper';
                 font-size: 3rem;
                 font-weight: $black-weight;
                 color: $main-color;
@@ -139,15 +159,13 @@
                 }
 
                 .new-products__albumtitle {
-                    font-size: 1.5rem;
-                    font-weight: $xbold-weight;
+                    font-weight: $bold-weight;
                     font-style: italic;
                     padding: 1rem 1rem 0.5rem 0;
                 }
 
                 .new-products__artist {
-                    font-size: 1.4rem;
-                    font-weight: $medium-weight;
+                    font-size: 1.5rem;
                     font-style: italic;
                 }
                 

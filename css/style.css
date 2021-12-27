@@ -520,18 +520,18 @@ html {
     align-items: center;
     justify-content: center; }
     .error-body .error .error__title {
+      font-family: 'UltraHyper';
       font-size: 3rem;
-      font-weight: 700;
-      font-style: italic;
+      letter-spacing: 0.1rem;
       padding: 2.5rem; }
     .error-body .error .error__p {
       padding-bottom: 3rem; }
       .error-body .error .error__p .error__p--index {
+        font-family: 'UltraHyper';
         font-size: 2.7rem;
-        font-weight: 900;
-        font-style: italic;
         text-decoration: none;
-        color: #e1148f; }
+        letter-spacing: 0.1rem;
+        color: #ed1e79; }
 
 .navbar {
   grid-area: navbar;

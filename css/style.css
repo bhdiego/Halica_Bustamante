@@ -608,10 +608,15 @@ footer {
     grid-template-rows: auto 400px auto auto auto 250px; }
     .index-container .section-1 .section-1__new-release .new-release__description {
       width: 50%; }
-    .index-container .section-2 .section-2__aotw .aotw__description {
-      width: 100%; }
-    .index-container .section-2 .section-2__classic .classic__description {
-      width: 100%; }
+    .index-container .section-2 .section-2__aotw {
+      border-right: 0; }
+      .index-container .section-2 .section-2__aotw .aotw__description {
+        width: 100%; }
+    .index-container .section-2 .section-2__classic {
+      border-top: 2px solid #eeeeee;
+      border-left: 0; }
+      .index-container .section-2 .section-2__classic .classic__description {
+        width: 100%; }
     .index-container .products-section .new-products .new-products__info {
       text-align: center; }
     .index-container .service-items-container {

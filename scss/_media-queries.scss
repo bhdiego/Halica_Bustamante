@@ -74,6 +74,7 @@
         .section-2 {
     
             .section-2__aotw {
+                border-right: 0;
 
                 .aotw__description {
                     width: 100%;
@@ -81,6 +82,8 @@
             }
     
             .section-2__classic {
+                border-top: $sc-border-2;
+                border-left: 0;
     
                 .classic__description {
                     width: 100%;

@@ -83,7 +83,7 @@ html {
       .index-container .products-section .products-section__title .products-section__title--title-name {
         font-size: 3rem;
         font-weight: 900;
-        color: #e1148f; }
+        color: #ed1e79; }
     .index-container .products-section .new-products {
       display: flex;
       flex-direction: row;
@@ -218,7 +218,7 @@ html {
       font-weight: 900;
       font-style: italic;
       padding: 3rem;
-      border-bottom: 1px solid #e1148f; }
+      border-bottom: 1px solid #ed1e79; }
     .recs-body .AOTW-section .recs-section {
       display: flex;
       flex-direction: column;
@@ -244,7 +244,7 @@ html {
             font-weight: 900;
             font-style: italic;
             padding-bottom: 1rem;
-            border-bottom: 1px solid #e1148f; }
+            border-bottom: 1px solid #ed1e79; }
           .recs-body .AOTW-section .recs-section .rec-album .rec-album__info .rec-album__table {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -339,7 +339,7 @@ html {
         font-size: 1.4rem;
         font-weight: 300;
         font-style: italic;
-        border-bottom: 1px solid #e1148f;
+        border-bottom: 1px solid #ed1e79;
         padding-bottom: 1rem; }
       .news-body .main-article .main-article__info h2, .news-body .main-article .main-article__info .h2 {
         padding-top: 2rem; }
@@ -348,7 +348,7 @@ html {
           font-weight: 700;
           font-style: italic;
           text-decoration: none;
-          color: #e1148f; }
+          color: #ed1e79; }
       .news-body .main-article .main-article__info .article__description--main {
         padding-top: 2rem;
         font-weight: 500; }
@@ -397,7 +397,7 @@ html {
     flex-direction: column;
     gap: 3rem;
     padding: 3rem;
-    border-top: 1px solid #e1148f;
+    border-top: 1px solid #ed1e79;
     align-items: center; }
     .news-body .other-news .other-news__article {
       display: flex;
@@ -450,7 +450,7 @@ html {
   background-color: transparent; }
   .navbar .container-fluid #navbar-title, .navbar .container-sm #navbar-title, .navbar .container-md #navbar-title, .navbar .container-lg #navbar-title, .navbar .container-xl #navbar-title, .navbar .container-xxl #navbar-title {
     font-size: 3rem;
-    color: #e1148f;
+    color: #ed1e79;
     font-weight: 900;
     padding: 0 4rem; }
   .navbar .container-fluid .collapse .navbar-nav, .navbar .container-sm .collapse .navbar-nav, .navbar .container-md .collapse .navbar-nav, .navbar .container-lg .collapse .navbar-nav, .navbar .container-xl .collapse .navbar-nav, .navbar .container-xxl .collapse .navbar-nav {
@@ -482,7 +482,7 @@ footer {
   text-align: center;
   background-color: #000000;
   padding: 3rem;
-  border-top: 5px solid #e1148f; }
+  border-top: 5px solid #ed1e79; }
   footer .footer__about p {
     font-size: 1.8rem;
     font-weight: 500;
@@ -500,7 +500,7 @@ footer {
     font-size: 2.5rem;
     font-weight: 800;
     font-style: italic;
-    color: #e1148f;
+    color: #ed1e79;
     padding: 0 0 1rem; }
 
 @media screen and (max-width: 576px) {
@@ -784,7 +784,7 @@ h6, .h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem; }
+  margin-bottom: 0; }
 
 abbr[title],
 abbr[data-bs-original-title] {

@@ -8,6 +8,24 @@
 html {
   font-size: 62.5%; }
 
+@font-face {
+  font-family: 'UltraHyper';
+  src: url("../fonts/ultrahyper-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Press Start 2P';
+  src: url("../fonts/PressStart2P.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ITCKabelStd-Demi';
+  src: url("../fonts/ITCKabelStd-Demi.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 .index-container {
   display: grid;
   grid-auto-columns: 1fr;

@@ -473,6 +473,7 @@ html {
           font-style: italic;
           padding: 1rem 0; }
         .news-body .other-news .other-news__article .other-news__info h4 .other-news__info--title, .news-body .other-news .other-news__article .other-news__info .h4 .other-news__info--title {
+          font-weight: 700;
           text-decoration: none;
           color: #000000; }
 
@@ -606,6 +607,18 @@ footer {
     grid-template-rows: auto 400px auto auto auto 250px; }
     .index-container .products-section .new-products .new-products__info {
       text-align: center; }
+    .index-container .service-items-container {
+      flex-direction: column;
+      height: auto;
+      padding: 1rem 0; }
+      .index-container .service-items-container .service-item {
+        padding: 1rem 0;
+        width: 90%; }
+        .index-container .service-items-container .service-item .service-item__box-svg {
+          width: 42px; }
+        .index-container .service-items-container .service-item .service-item__p {
+          font-size: 2.1rem;
+          letter-spacing: 0.1rem; }
   .news-body main .main-article .main-article__info h2 .article__title--main, .news-body main .main-article .main-article__info .h2 .article__title--main {
     font-size: 2.7rem; }
   .news-body main .sec-news {

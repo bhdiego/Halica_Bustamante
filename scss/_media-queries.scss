@@ -70,6 +70,26 @@
                 }
             }
         }
+
+        .service-items-container {
+            flex-direction: column;
+            height: auto;
+            padding: 1rem 0;
+
+            .service-item {
+                padding: 1rem 0;
+                width: 90%;
+                
+                .service-item__box-svg {
+                    width: 42px;
+                }
+
+                .service-item__p {
+                    font-size: 2.1rem;
+                    letter-spacing: 0.1rem;
+                }
+            }
+        }
     }
 
     .news-body {

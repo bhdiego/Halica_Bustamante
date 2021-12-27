@@ -81,6 +81,10 @@ html {
       padding: 3rem 0;
       color: #ffffff;
       text-shadow: 0px 0px 5px black; }
+    .index-container .section-1 .section-1__new-release p .new-release__more, .index-container .section-1 .section-1__new-release p .aotw__more, .index-container .section-1 .section-1__new-release p .classic__more, .index-container .section-1 .section-2__aotw p .new-release__more, .index-container .section-1 .section-2__aotw p .aotw__more, .index-container .section-1 .section-2__aotw p .classic__more, .index-container .section-1 .section-2__classic p .new-release__more, .index-container .section-1 .section-2__classic p .aotw__more, .index-container .section-1 .section-2__classic p .classic__more, .index-container .section-2 .section-1__new-release p .new-release__more, .index-container .section-2 .section-1__new-release p .aotw__more, .index-container .section-2 .section-1__new-release p .classic__more, .index-container .section-2 .section-2__aotw p .new-release__more, .index-container .section-2 .section-2__aotw p .aotw__more, .index-container .section-2 .section-2__aotw p .classic__more, .index-container .section-2 .section-2__classic p .new-release__more, .index-container .section-2 .section-2__classic p .aotw__more, .index-container .section-2 .section-2__classic p .classic__more {
+      font-weight: 700;
+      color: #eeeeee;
+      text-decoration: none; }
   .index-container .service-items-container {
     grid-area: serv;
     display: flex;

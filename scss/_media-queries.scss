@@ -61,6 +61,33 @@
     .index-container {
         grid-template-rows: auto 400px auto auto auto 250px;
 
+        .section-1 {
+    
+            .section-1__new-release {
+    
+                .new-release__description {
+                    width: 50%;
+                }
+            }
+        }
+
+        .section-2 {
+    
+            .section-2__aotw {
+
+                .aotw__description {
+                    width: 100%;
+                }
+            }
+    
+            .section-2__classic {
+    
+                .classic__description {
+                    width: 100%;
+                }
+            }
+        }
+
         .products-section {
 
             .new-products {

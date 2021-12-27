@@ -217,7 +217,7 @@
     display: grid; 
     grid-auto-columns: 1fr; 
     grid-template-columns: 1fr; 
-    grid-template-rows: auto auto auto auto 300px;
+    grid-template-rows: auto auto auto auto 220px;
     grid-template-areas: 
       "navbar"
       "promo"
@@ -317,7 +317,7 @@
     display: grid; 
     grid-auto-columns: 1fr; 
     grid-template-columns: 1fr; 
-    grid-template-rows: auto auto 300px; 
+    grid-template-rows: auto auto 220px; 
     grid-template-areas: 
       "navbar"
       "recs"
@@ -410,31 +410,69 @@
     display: grid; 
     grid-auto-columns: 1fr; 
     grid-template-columns: 1fr; 
-    grid-template-rows: auto auto 300px; 
+    grid-template-rows: auto auto 220px; 
     grid-template-areas: 
       "navbar"
       "main"
       "footer";
     width: 100%;
     height: 100%;
+
+    .afx {
+        background-image: url(../img/svg/aphex_logo.svg);
+        background-size: cover;
+    }
+
+    .mbv {
+        background-image: url(../img/bg/loveless-bg.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
     
-    .afx, .merch {
+    .afx, .mbv, .merch {
         display: flex;
         flex-direction: column;
 
-        .afx__title, .merch__title {
-            border-bottom: $sc-border;
+        .afx__title {
+            background-color: #1d1d1d;
+        }
 
-            .afx__title--h2, .merch__title--h2 {
-                text-align: center;
+        .mbv__title {
+            border-top: 2px solid #852229;
+        }
+
+        .merch__title {
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .afx__title, .mbv__title, .merch__title {
+            
+            .afx__title--h2 {
+                font-family: 'Press Start 2P';
+                font-size: 2.1rem;
+                color: #eeeeee;
+            }
+
+            .mbv__title--h2 {
+                font-family: 'ITCKabelStd-Demi';
                 font-size: 3rem;
+                color: #852229;
+            }
+
+            .merch__title--h2 {
+                font-family: 'Raleway', sans-serif;
                 font-weight: $black-weight;
+                font-size: 2.5rem;
                 font-style: italic;
+            }
+
+            .afx__title--h2, .mbv__title--h2, .merch__title--h2 {
+                text-align: center;
                 padding: 3rem 0;
             }
         }
 
-        .afx__merch, .music__merch {
+        .afx__merch, .mbv__merch, .music__merch {
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
@@ -443,16 +481,16 @@
             gap: 3rem;
             padding: 3rem;
 
-            .afx__item, .music__item {
+            .afx__item, .mbv__item, .music__item {
                 display: flex;
                 flex-direction: column;
 
-                .afx__item_ph, .music__item_ph {
+                .afx__item_ph, .mbv__item_ph, .music__item_ph {
                     width: 360px;
                     height: 360px;
                     overflow: hidden;
 
-                    .afx__item_ph--img, .music__item_ph--img {
+                    .afx__item_ph--img, .mbv__item_ph--img, .music__item_ph--img {
                         width: 100%;
                         -webkit-transform: scale(1);
                         transform: scale(1);
@@ -465,17 +503,31 @@
                     }
                 }
 
-                .afx__item_description, .music__item_description {
+                .afx__item_description, .mbv__item_description, .music__item_description {
                     width: 360px;
                     text-align: center;
                     padding: 1rem 0;
                     height: 10rem;
 
-                    .afx__item_description--name, .music__item_description--name {
-                        font-size: 2rem;
-                        font-style: italic;
+                    .afx__item_description--name {
+                        font-family: 'Press Start 2P';
+                        color: #cad402;
+                        text-shadow: 0px 0px 5px rgba(29, 29, 29, 1);
+                    }
+
+                    .mbv__item_description--name {
+                        font-family: 'ITCKabelStd-Demi';
+                        color: #eeeeee;
+                    }
+
+                    .music__item_description--name {
+                        font-family: 'Raleway', sans-serif;
+                        font-weight: $bold-weight;
+                        color: #1d1d1d;
+                    }
+
+                    .afx__item_description--name, .mbv__item_description--name, .music__item_description--name {
                         text-decoration: none;
-                        color: #000000;
                     }
                 }
             }
@@ -489,7 +541,7 @@
     display: grid; 
     grid-auto-columns: 1fr; 
     grid-template-columns: 1fr; 
-    grid-template-rows: auto auto auto auto 300px; 
+    grid-template-rows: auto auto auto auto 220px; 
     grid-template-areas: 
       "navbar"
       "main"
@@ -654,7 +706,7 @@
     display: grid; 
     grid-auto-columns: 1fr; 
     grid-template-columns: 1fr; 
-    grid-template-rows: auto auto 300px;
+    grid-template-rows: auto auto 220px;
     grid-template-areas: 
       "navbar"
       "error"

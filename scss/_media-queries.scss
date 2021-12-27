@@ -1,8 +1,13 @@
-// Index
-
 @media screen and (max-width: 1280px) {
     .index-container {
-        grid-template-rows: auto 400px auto auto auto auto 250px;
+        grid-template-rows: auto 400px auto auto auto 250px;
+
+        .newsletter {
+    
+            .newsletter__container {
+                width: 70vw;
+            }
+        }
     }
 
     .news-body {
@@ -74,7 +79,6 @@
         .section-2 {
     
             .section-2__aotw {
-                border-right: 0;
 
                 .aotw__description {
                     width: 100%;
@@ -82,8 +86,6 @@
             }
     
             .section-2__classic {
-                border-top: $sc-border-2;
-                border-left: 0;
     
                 .classic__description {
                     width: 100%;
@@ -160,27 +162,14 @@
 
 @media screen and (max-width: 768px) {
     .index-container {
-        grid-template-rows: auto 400px auto auto auto auto 250px;
+        grid-template-rows: auto 400px auto auto auto 250px;
 
         .section-2 {
             flex-direction: column;
         }
 
-        .service-items {
-            flex-direction: column;
-            height: 250px;
-
-            div {
-                
-                p {
-                    font-size: 1.8rem;
-                    width: 90vw;
-                }
-            }
-        }
-
         .newsletter {
-            
+    
             .newsletter__container {
                 width: 90%;
 
@@ -255,7 +244,7 @@
 
 @media screen and (max-width: 576px) {
     .index-container {
-        grid-template-rows: auto 400px auto auto auto auto 360px;
+        grid-template-rows: auto 400px auto auto auto 360px;
 
         .section-1, .section-2 {
 
@@ -273,6 +262,22 @@
                 .new-release__description, .aotw__description, .classic__description {
                     width: 100%;
                     font-size: 1.5rem;
+                }
+            }
+        }
+
+        .service-items-container {
+
+            .service-item {
+
+                .service-item__box-svg {
+                    width: 32px;
+                }
+                
+                .service-item__p {
+                    font-size: 1.6rem;
+                    padding: 0 1rem;
+                    letter-spacing: 0;
                 }
             }
         }
@@ -372,26 +377,26 @@
     .merch-body {
         grid-template-rows: auto auto 360px;
 
-        .afx, .merch {
+        .afx, .mbv, .merch {
 
-            .afx__title, .merch__title {
+            .afx__title, .mbv__title .merch__title {
     
-                .afx__title--h2, .merch__title--h2 {
-                    font-size: 2.5rem;
+                .afx__title--h2 {
+                    font-size: 1.8rem;
                 }
             }
     
-            .afx__merch, .music__merch {
+            .afx__merch, .mbv__merch, .music__merch {
                 
-                .afx__item, .music__item {
+                .afx__item, .mbv__item, .music__item {
                     
-                    .afx__item_ph, .music__item_ph {
+                    .afx__item_ph, .mbv__item_ph, .music__item_ph {
                         width: 270px;
                         height: 270px;
                         overflow: hidden;
                     }
     
-                    .afx__item_description, .music__item_description {
+                    .afx__item_description, .mbv__item_description, .music__item_description {
                         width: 270px;
                     }
                 }
